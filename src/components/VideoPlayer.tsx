@@ -18,12 +18,16 @@ import {
 } from 'lucide-react';
 import { Channel } from '../types';
 import { ThemeConfig } from '../theme';
+import { Download, Lock } from 'lucide-react';
+import NiniDownload from '../plugins/nini-download';
 
 interface Props {
   channel: Channel;
   theme: ThemeConfig;
   onNextChannel?: () => void;
   onPrevChannel?: () => void;
+  canDownload?: boolean;
+  onRequestPro?: () => void;
 }
 
 export const VideoPlayer: React.FC<Props> = ({
@@ -31,7 +35,31 @@ export const VideoPlayer: React.FC<Props> = ({
   theme,
   onNextChannel,
   onPrevChannel,
+  canDownload,
+  onRequestPro,
 }) => {
+  const [downloading, setDownloading] = useState<boolean>(false);
+  const [downloadMsg, setDownloadMsg] = useState<string | null>(null);
+
+  const handleDownload = async () => {
+    if (!canDownload) {
+      onRequestPro?.();
+      return;
+    }
+    if (downloading) return;
+    setDownloading(true);
+    setDownloadMsg('در حال دانلود… فایل در پوشه Downloads ذخیره می‌شود');
+    try {
+      const res = await NiniDownload.download({ url: channel.streamUrl, title: channel.name });
+      if (res.ok) setDownloadMsg('✅ دانلود تمام شد → ' + (res.path || 'پوشه Downloads'));
+      else setDownloadMsg('❌ خطا: ' + (res.error || 'ناموفق'));
+    } catch (e: any) {
+      setDownloadMsg('❌ خطا: ' + (e?.message || 'پلاگین دانلود در دسترس نیست'));
+    } finally {
+      setDownloading(false);
+      setTimeout(() => setDownloadMsg(null), 6000);
+    }
+  };
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const hlsRef = useRef<Hls | null>(null);
@@ -455,6 +483,18 @@ export const VideoPlayer: React.FC<Props> = ({
               )}
             </div>
 
+            {/* Download Button */}
+            <button
+              onClick={handleDownload}
+              className={`p-2 sm:px-3 sm:py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition active:scale-95 ${
+                canDownload ? 'bg-emerald-600/80 hover:bg-emerald-500 text-white' : 'bg-white/10 text-zinc-400'
+              }`}
+              title={canDownload ? 'دانلود این شبکه' : 'دانلود فقط برای مشترکین VIP'}
+            >
+              {downloading ? <RotateCcw className="w-4 h-4 animate-spin" /> : canDownload ? <Download className="w-4 h-4" /> : <Lock className="w-4 h-4" />}
+              <span className="hidden sm:inline">{downloading ? 'در حال دانلود…' : 'دانلود'}</span>
+            </button>
+
             {/* Fullscreen Button */}
             <button
               onClick={toggleFullscreen}
@@ -466,6 +506,11 @@ export const VideoPlayer: React.FC<Props> = ({
               <span className="hidden sm:inline">{isFullscreen ? 'خروج' : 'تمام‌صفحه'}</span>
             </button>
           </div>
+          {downloadMsg && (
+            <div className="px-3 py-2 bg-black/85 border-t border-white/10 text-[11px] text-white font-semibold">
+              {downloadMsg}
+            </div>
+          )}
         </div>
       </div>
     </div>

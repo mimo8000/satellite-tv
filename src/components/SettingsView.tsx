@@ -157,7 +157,7 @@ export const SettingsView: React.FC<Props> = ({
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Smartphone className="w-5 h-5 text-cyan-400" />
-            <h4 className="font-bold text-sm">نسخه اپلیکیشن ماهواره تی‌وی اندروید</h4>
+            <h4 className="font-bold text-sm">نسخه اپلیکیشن Nini TV Pro</h4>
           </div>
           <span className="text-xs font-mono font-bold opacity-75">v2.5.0 Pro</span>
         </div>

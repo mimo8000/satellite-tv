@@ -61,7 +61,7 @@ export const Navbar: React.FC<Props> = ({
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <h1 className="font-extrabold text-base tracking-tight">ماهواره تی‌وی اندروید</h1>
+              <h1 className="font-extrabold text-base tracking-tight">Nini TV Pro</h1>
               <span className={`text-[10px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wider ${currentTheme.badgeBg}`}>
                 V2.5 HD
               </span>

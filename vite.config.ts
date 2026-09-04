@@ -14,8 +14,8 @@ export default defineConfig(() => {
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
         manifest: {
           id: '/',
-          name: 'ماهواره تی‌وی - Sat TV Android',
-          short_name: 'SatTV',
+          name: 'Nini TV Pro - نینی تی‌وی پرو',
+          short_name: 'NiniTV',
           description: 'اپلیکیشن تماشای شبکه‌های ماهواره‌ای و IPTV همراه با فرکانس‌ها و تم‌های رنگی',
           theme_color: '#0f172a',
           background_color: '#020617',

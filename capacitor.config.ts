@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.sattv.app',
-  appName: 'SatTV',
+  appId: 'tv.nini.pro',
+  appName: 'Nini TV Pro',
   webDir: 'dist'
 };
 

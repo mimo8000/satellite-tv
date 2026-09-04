@@ -16,9 +16,20 @@ import { SettingsView } from './components/SettingsView';
 import { BottomNav } from './components/BottomNav';
 import { ParentalLockModal } from './components/ParentalLockModal';
 import { PWAInstallBanner } from './components/PWAInstallBanner';
+import { AuthGate, loadSession, saveSession } from './components/AuthGate';
+import { ProModal } from './components/ProModal';
+import { NiniSession } from './types';
 import { Tv, Radio, Flame, Sparkles, ChevronRight, ChevronLeft } from 'lucide-react';
 
 export default function App() {
+  // Subscription gate — session restored from localStorage (HMAC-verified code)
+  const [session, setSession] = useState<NiniSession | null>(() => loadSession());
+
+  const handleLogout = () => {
+    saveSession(null);
+    setSession(null);
+  };
+
   // Theme state: defaults to green as requested, supports green, pink, black, yellow
   const [themeId, setThemeId] = useState<ThemeColor>(() => {
     const saved = localStorage.getItem('sat_theme');
@@ -65,6 +76,7 @@ export default function App() {
   // 18+ Parental Lock
   const [isLocked18Plus, setIsLocked18Plus] = useState<boolean>(true);
   const [showUnlockModal, setShowUnlockModal] = useState<boolean>(false);
+  const [showProModal, setShowProModal] = useState<boolean>(false);
 
   // Sync theme changes to localStorage and HTML theme-color
   const handleSelectTheme = (newTheme: ThemeColor) => {
@@ -126,6 +138,11 @@ export default function App() {
       setShowUnlockModal(true);
       return;
     }
+    // PRO gate: non-free channels require a VIP subscription
+    if (channel.free === false && !session?.isVip) {
+      setShowProModal(true);
+      return;
+    }
     setSelectedChannel(channel);
     // Smoothly switch to player view if on mobile/small screens
     if (activeTab !== 'player') {
@@ -148,6 +165,10 @@ export default function App() {
       setSelectedChannel(channels[prevIdx]);
     }
   };
+
+  if (!session) {
+    return <AuthGate onAuthenticated={setSession} />;
+  }
 
   return (
     <div
@@ -183,6 +204,8 @@ export default function App() {
               theme={currentTheme}
               onNextChannel={handleNextChannel}
               onPrevChannel={handlePrevChannel}
+              canDownload={!!session?.isVip}
+              onRequestPro={() => setShowProModal(true)}
             />
 
             {/* Quick Channel Zap Bar (Next / Prev channel buttons and quick channel carousel) */}
@@ -311,6 +334,14 @@ export default function App() {
           </div>
         )}
       </main>
+
+      {/* PRO upsell modal */}
+      <ProModal
+        isOpen={showProModal}
+        onClose={() => setShowProModal(false)}
+        theme={currentTheme}
+        channelName={selectedChannel?.persianName}
+      />
 
       {/* Parental Lock Modal for 18+ Channels */}
       <ParentalLockModal

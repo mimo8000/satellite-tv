@@ -4,6 +4,9 @@ export type ChannelCategory =
   | 'all'
   | 'adult_18'
   | 'movies'
+  | 'series'
+  | 'cartoon'
+  | 'kids'
   | 'sports'
   | 'music'
   | 'news'
@@ -22,6 +25,7 @@ export interface Channel {
   backupStreamUrl?: string;
   isHd?: boolean;
   is18Plus?: boolean;
+  free?: boolean; // true = watchable without subscription code
   quality: '1080p' | '720p' | '480p' | '4K';
   country: string;
   language: string;
@@ -51,3 +55,13 @@ export interface DishAlignment {
 }
 
 export type ActiveTab = 'player' | 'channels' | 'frequencies' | 'm3u' | 'settings';
+
+export type NiniTier = 'standard' | 'vip_premium' | 'admin_unlimited';
+
+export interface NiniSession {
+  code: string;
+  tier: NiniTier;
+  isVip: boolean;
+  isAdmin: boolean;
+  activatedAt: number;
+}
