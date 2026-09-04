@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="33%" stop-color="#ec4899"/>
+      <stop offset="66%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)"/>
+  <rect x="24" y="24" width="464" height="464" rx="88" fill="none" stroke="url(#neonGlow)" stroke-width="8" opacity="0.8"/>
+  
+  <!-- Satellite Dish Icon -->
+  <g transform="translate(256, 230)">
+    <!-- Signal Waves -->
+    <path d="M-130,-100 A160,160 0 0,1 40,-130" fill="none" stroke="#eab308" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-100,-70 A120,120 0 0,1 20,-95" fill="none" stroke="#ec4899" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-70,-40 A80,80 0 0,1 0,-60" fill="none" stroke="#10b981" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Dish parabola -->
+    <path d="M-120,40 C-100,-60 20,-120 100,-60 C70,10 -30,80 -120,40 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="10"/>
+    
+    <!-- LNB feed arm -->
+    <line x1="-30" y1="-10" x2="-90" y2="-70" stroke="#f1f5f9" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="-90" cy="-70" r="14" fill="#ec4899"/>
+    
+    <!-- Stand mount -->
+    <path d="M20,10 L70,80 L30,120 M70,80 L110,120" fill="none" stroke="#94a3b8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- TV Text / Badge -->
+  <rect x="156" y="380" width="200" height="56" rx="28" fill="#111827" stroke="#10b981" stroke-width="4"/>
+  <text x="256" y="418" text-anchor="middle" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="900" font-size="24" letter-spacing="4">SAT TV</text>
+</svg>
