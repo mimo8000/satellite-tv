@@ -73,13 +73,16 @@ public class StreamProxyPlugin extends Plugin {
             s.setSoTimeout(20000);
             InputStream in = s.getInputStream();
             StringBuilder req = new StringBuilder();
-            int c, prev = -1;
-            // read request headers
+            int c;
+            // read request headers until CRLF CRLF (HTTP) or LF LF (fallback)
             while ((c = in.read()) != -1) {
                 req.append((char) c);
-                if (prev == '\n' && c == '\n') break;
-                prev = c;
-                if (req.length() > 65536) break;
+                int len = req.length();
+                if (len >= 4
+                        && req.charAt(len - 4) == '\r' && req.charAt(len - 3) == '\n'
+                        && req.charAt(len - 2) == '\r' && req.charAt(len - 1) == '\n') break;
+                if (len >= 2 && req.charAt(len - 2) == '\n' && req.charAt(len - 1) == '\n') break;
+                if (len > 65536) break;
             }
             String head = req.toString();
             String first = head.split("\r?\n", 2)[0];
@@ -119,11 +122,13 @@ public class StreamProxyPlugin extends Plugin {
             String ctype = conn.getContentType();
             if (ctype == null) ctype = "application/octet-stream";
 
-            boolean isM3u8 = ctype.contains("mpegurl") || target.contains(".m3u8");
+            boolean isM3u8 = (ctype.contains("mpegurl") || target.contains(".m3u8")) && code < 400;
 
             StringBuilder resp = new StringBuilder();
-            resp.append("HTTP/1.1 ").append(code).append(" OK\r\n");
+            resp.append("HTTP/1.1 ").append(code)
+                .append(code == 206 ? " Partial Content" : " OK").append("\r\n");
             resp.append(cors());
+            resp.append("Connection: close\r\n");
             resp.append("Content-Type: ").append(ctype).append("\r\n");
             if (isM3u8) {
                 byte[] body = readAll(conn.getInputStream());

@@ -114,6 +114,7 @@ export const VideoPlayer: React.FC<Props> = ({
     // Proxy the stream through the native server first (handles CORS + headers).
     (async () => {
       let resolvedUrl = activeUrl;
+      let triedDirect = false;
       try { resolvedUrl = await proxied(activeUrl); } catch { /* fall back to direct */ }
       if (cancelled) return;
 
@@ -122,6 +123,17 @@ export const VideoPlayer: React.FC<Props> = ({
         hlsRef.current.destroy();
         hlsRef.current = null;
       }
+
+      // If the native proxy URL itself fails, retry ONCE with the direct URL.
+      const fallbackToDirect = (): boolean => {
+        if (!triedDirect && resolvedUrl.indexOf('127.0.0.1') !== -1) {
+          triedDirect = true;
+          resolvedUrl = activeUrl;
+          startPlayback();
+          return true;
+        }
+        return false;
+      };
 
       const startPlayback = () => {
         if (video.canPlayType('application/vnd.apple.mpegurl') && resolvedUrl.endsWith('.m3u8')) {
@@ -140,6 +152,7 @@ export const VideoPlayer: React.FC<Props> = ({
           hls.on(Hls.Events.ERROR, (_, data) => {
             if (data.fatal) {
               console.warn('HLS stream error:', data);
+              if (fallbackToDirect()) return;
               if (channel.backupStreamUrl && !usingBackup) setUsingBackup(true);
               else { setStreamError(true); setIsLoading(false); }
             }
