@@ -1,17 +1,36 @@
 /**
  * Nini TV Pro — 18+ parental PIN.
- * The PIN is fetched from GitHub (raw) so the owner can change it anytime
- * WITHOUT rebuilding the APK: just edit src/config/adultPin.json in the repo
- * (or run the set_adult_pin.sh script) and push — the app picks it up on the
- * next unlock attempt. Falls back to the bundled default if offline.
+ * Priority:
+ *   1) PIN set by the owner IN THE APP (persisted locally) — always wins.
+ *   2) PIN pushed to GitHub (src/config/adultPin.json) — changeable without rebuild.
+ *   3) Bundled default.
  */
 import localConfig from './adultPin.json';
 
 const REMOTE = 'https://raw.githubusercontent.com/mimo8000/satellite-tv/main/src/config/adultPin.json';
+// use a benign-looking key so the value isn't obvious in DevTools
+const CUSTOM_KEY = 'nini_app_prefs_18';
+const CACHE_KEY = 'nini_pin_cache';
 
-let cached: string | null = null;
+export function getCustomPin(): string | null {
+  const v = localStorage.getItem(CUSTOM_KEY);
+  return v && /^\d{4}$/.test(v) ? v : null;
+}
+
+export function setAdultPin(pin: string): boolean {
+  if (!/^\d{4}$/.test(pin)) return false;
+  localStorage.setItem(CUSTOM_KEY, pin);
+  return true;
+}
+
+export function clearAdultPin(): void {
+  localStorage.removeItem(CUSTOM_KEY);
+}
 
 export async function getAdultPin(): Promise<string> {
+  const custom = getCustomPin();
+  if (custom) return custom;
+
   try {
     const ctrl = new AbortController();
     const timer = setTimeout(() => ctrl.abort(), 6000);
@@ -21,18 +40,16 @@ export async function getAdultPin(): Promise<string> {
       const j = await res.json();
       const pin = String(j.pin || '').trim();
       if (/^\d{4}$/.test(pin)) {
-        cached = pin;
-        localStorage.setItem('nini_adult_pin', pin);
+        localStorage.setItem(CACHE_KEY, pin);
         return pin;
       }
     }
   } catch {
-    /* offline — use local fallback */
+    /* offline */
   }
-  const saved = localStorage.getItem('nini_adult_pin');
-  if (saved && /^\d{4}$/.test(saved)) return saved;
-  cached = String((localConfig as { pin: string }).pin);
-  return cached;
+  const cached = localStorage.getItem(CACHE_KEY);
+  if (cached && /^\d{4}$/.test(cached)) return cached;
+  return String((localConfig as { pin: string }).pin);
 }
 
 export async function verifyAdultPin(input: string): Promise<boolean> {

@@ -12,7 +12,8 @@ export type ChannelCategory =
   | 'music'
   | 'news'
   | 'entertainment'
-  | 'documentary';
+  | 'documentary'
+  | 'horror';
 
 export interface Channel {
   id: string;
@@ -55,7 +56,7 @@ export interface DishAlignment {
   coverage: string;
 }
 
-export type ActiveTab = 'player' | 'movies' | 'series' | 'cartoon' | 'adult' | 'live' | 'settings';
+export type ActiveTab = 'player' | 'movies' | 'series' | 'cartoon' | 'horror' | 'adult' | 'live' | 'settings';
 
 export type NiniTier = 'standard' | 'vip_premium' | 'admin_unlimited';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Palette,
   Shield,
@@ -8,12 +8,14 @@ import {
   Info,
   Check,
   RefreshCw,
+  KeyRound,
   Zap,
   Volume2,
   Tv
 } from 'lucide-react';
 import { ThemeColor } from '../types';
 import { ThemeConfig, THEMES } from '../theme';
+import { setAdultPin, getCustomPin, verifyAdultPin } from '../config/adultPin';
 
 interface Props {
   currentTheme: ThemeConfig;
@@ -30,6 +32,11 @@ export const SettingsView: React.FC<Props> = ({
   onToggleLock,
   onRequestResetData,
 }) => {
+  const [showPinForm, setShowPinForm] = useState<boolean>(false);
+  const [pinOld, setPinOld] = useState<string>('');
+  const [pinNew, setPinNew] = useState<string>('');
+  const [pinRep, setPinRep] = useState<string>('');
+  const [pinMsg, setPinMsg] = useState<string>('');
   const themeOptions: {
     id: ThemeColor;
     title: string;
@@ -134,7 +141,9 @@ export const SettingsView: React.FC<Props> = ({
                 وضعیت قفل: {isLocked18Plus ? 'فعال (رمز لازم است)' : 'غیرفعال (آزاد)'}
               </h4>
               <p className="text-[11px] opacity-70 mt-0.5">
-                رمز عبور پیش‌فرض: <span className="font-mono font-bold text-amber-300">1234</span>
+                {getCustomPin()
+                  ? <span>رمز اختصاصی شما ذخیره شده ✓</span>
+                  : <span>رمز از سرور تنظیم می‌شود</span>}
               </p>
             </div>
           </div>
@@ -150,6 +159,68 @@ export const SettingsView: React.FC<Props> = ({
             {isLocked18Plus ? 'باز کردن قفل' : 'قفل کردن'}
           </button>
         </div>
+      </div>
+
+      {/* Change 18+ PIN (owner only — requires current PIN) */}
+      <div className={`p-4 rounded-2xl border ${currentTheme.cardBg} ${currentTheme.cardBorder} space-y-3`}>
+        <div className="flex items-center gap-2">
+          <KeyRound className="w-4 h-4 text-amber-400" />
+          <h4 className="font-bold text-xs sm:text-sm">تغییر رمز ۱۸+</h4>
+        </div>
+        {showPinForm ? (
+          <div className="space-y-2">
+            <input
+              type="password" inputMode="numeric" maxLength={4}
+              value={pinOld} onChange={(e) => { setPinOld(e.target.value.replace(/\D/g, '')); setPinMsg(''); }}
+              placeholder="رمز فعلی (۴ رقم)"
+              className="w-full bg-black/40 border border-white/15 rounded-xl px-3 py-2 text-sm font-mono text-center tracking-widest focus:outline-none focus:border-amber-400"
+            />
+            <input
+              type="password" inputMode="numeric" maxLength={4}
+              value={pinNew} onChange={(e) => { setPinNew(e.target.value.replace(/\D/g, '')); setPinMsg(''); }}
+              placeholder="رمز جدید (۴ رقم)"
+              className="w-full bg-black/40 border border-white/15 rounded-xl px-3 py-2 text-sm font-mono text-center tracking-widest focus:outline-none focus:border-amber-400"
+            />
+            <input
+              type="password" inputMode="numeric" maxLength={4}
+              value={pinRep} onChange={(e) => { setPinRep(e.target.value.replace(/\D/g, '')); setPinMsg(''); }}
+              placeholder="تکرار رمز جدید"
+              className="w-full bg-black/40 border border-white/15 rounded-xl px-3 py-2 text-sm font-mono text-center tracking-widest focus:outline-none focus:border-amber-400"
+            />
+            {pinMsg && <p className="text-[11px] font-bold text-amber-300">{pinMsg}</p>}
+            <div className="flex gap-2">
+              <button
+                onClick={async () => {
+                  if (pinOld.length !== 4 || pinNew.length !== 4 || pinRep.length !== 4) { setPinMsg('همه خانه‌ها را ۴ رقمی پر کنید'); return; }
+                  if (pinNew !== pinRep) { setPinMsg('رمز جدید و تکرارش یکی نیست'); return; }
+                  const ok = await verifyAdultPin(pinOld);
+                  if (!ok) { setPinMsg('رمز فعلی اشتباه است'); return; }
+                  setAdultPin(pinNew);
+                  setPinMsg('✅ رمز جدید ذخیره شد');
+                  setPinOld(''); setPinNew(''); setPinRep('');
+                  setShowPinForm(false);
+                }}
+                className={`flex-1 py-2 rounded-xl text-xs font-bold ${currentTheme.primaryBtn}`}
+              >
+                ذخیره رمز جدید
+              </button>
+              <button
+                onClick={() => { setShowPinForm(false); setPinMsg(''); }}
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/20 transition"
+              >
+                انصراف
+              </button>
+            </div>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowPinForm(true)}
+            className="w-full py-2.5 rounded-xl text-xs font-bold bg-amber-600/80 hover:bg-amber-500 text-white transition flex items-center justify-center gap-2"
+          >
+            <KeyRound className="w-4 h-4" />
+            تغییر رمز ۱۸+
+          </button>
+        )}
       </div>
 
       {/* App Info & Reset */}

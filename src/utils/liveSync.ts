@@ -1,8 +1,9 @@
 /**
  * Nini TV Pro — automatic content sync.
- * Fetches live IPTV playlists from public sources (CORS-open), parses them,
- * and merges any NEW channels into the local list. Runs on app start and
- * at most once every 12 hours.
+ * Pulls every IPTV category (movies, series, kids, animation, action, horror,
+ * comedy, documentary, xxx, news, sports…) from iptv-org + Iranian feeds,
+ * keeps only channels that are actually alive, and merges them into the local
+ * list. Runs on app start, at most once every 6 hours.
  */
 import { Channel, ChannelCategory } from '../types';
 
@@ -15,53 +16,47 @@ interface Feed {
   desc: string;
 }
 
+const CAT = (id: string) => `https://iptv-org.github.io/iptv/categories/${id}.m3u`;
+const LANG = (id: string) => `https://iptv-org.github.io/iptv/languages/${id}.m3u`;
+
 const FEEDS: Feed[] = [
-  {
-    url: 'https://iptv-org.github.io/iptv/countries/ir.m3u',
-    category: 'live', satellite: 'IPTV (بدون فیلترشکن)', free: true,
-    desc: 'شبکه زنده ایرانی',
-  },
-  {
-    url: 'https://iptv-org.github.io/iptv/categories/movies.m3u',
-    category: 'movies', satellite: 'IPTV Pro', free: false,
-    desc: 'فیلم سینمایی — ویژه VIP',
-  },
-  {
-    url: 'https://iptv-org.github.io/iptv/categories/series.m3u',
-    category: 'series', satellite: 'IPTV Pro', free: false,
-    desc: 'سریال — ویژه VIP',
-  },
-  {
-    url: 'https://iptv-org.github.io/iptv/categories/kids.m3u',
-    category: 'cartoon', satellite: 'IPTV Kids', free: false,
-    desc: 'کارتون — ویژه VIP',
-  },
-  {
-    url: 'https://iptv-org.github.io/iptv/categories/animation.m3u',
-    category: 'cartoon', satellite: 'IPTV Kids', free: false,
-    desc: 'انیمیشن — ویژه VIP',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/joetrombose/tv/master/ADULT_XXX.m3u',
-    category: 'adult_18', satellite: 'VIP 18+', free: false, plus18: true,
-    desc: 'بزرگسالان ۱۸+ — با فیلترشکن',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/dyjldq/my-m3u/master/adult-list/XXX.m3u',
-    category: 'adult_18', satellite: 'VIP 18+', free: false, plus18: true,
-    desc: 'بزرگسالان ۱۸+ — با فیلترشکن',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/igorpetrenko3690/IGOR_IPTV/master/categories/xxx.m3u',
-    category: 'adult_18', satellite: 'VIP 18+', free: false, plus18: true,
-    desc: 'بزرگسالان ۱۸+ — با فیلترشکن',
-  },
+  // ---- Iranian live TV (no VPN needed) ----
+  { url: 'https://iptv-org.github.io/iptv/countries/ir.m3u',
+    category: 'live', satellite: 'شبکه ایران', free: true, desc: 'شبکه زنده ایرانی' },
+  { url: LANG('fas'),
+    category: 'live', satellite: 'فارسی', free: true, desc: 'کانال فارسی' },
+
+  // ---- Movies (subtitled / original language — NOT dubbed) ----
+  { url: CAT('movies'), category: 'movies', satellite: 'سینمایی 👑', free: false, desc: 'فیلم سینمایی — زیرنویس، ویژه اشتراک' },
+  { url: CAT('action'),  category: 'movies', satellite: 'اکشن/رزمی 👑', free: false, desc: 'فیلم اکشن و رزمی — ویژه اشتراک' },
+  { url: CAT('horror'),  category: 'horror', satellite: 'ترسناک 👑', free: false, desc: 'فیلم ترسناک — ویژه اشتراک' },
+  { url: CAT('thriller'),category: 'horror', satellite: 'هیجانی 👑', free: false, desc: 'فیلم هیجانی — ویژه اشتراک' },
+  { url: CAT('comedy'),  category: 'movies', satellite: 'کمدی 👑', free: false, desc: 'فیلم کمدی — ویژه اشتراک' },
+  { url: CAT('drama'),   category: 'movies', satellite: 'درام 👑', free: false, desc: 'فیلم درام — ویژه اشتراک' },
+  { url: CAT('sci-fi'),  category: 'movies', satellite: 'علمی‌تخیلی 👑', free: false, desc: 'علمی‌تخیلی — ویژه اشتراک' },
+
+  // ---- Series ----
+  { url: CAT('series'),   category: 'series', satellite: 'سریال 👑', free: false, desc: 'سریال — ویژه اشتراک' },
+  { url: CAT('animation'), category: 'cartoon', satellite: 'انیمیشن 👑', free: false, desc: 'انیمیشن — ویژه اشتراک' },
+  { url: CAT('kids'),     category: 'cartoon', satellite: 'کودک 👑', free: false, desc: 'کارتون کودک — ویژه اشتراک' },
+
+  // ---- Documentary / sports / news ----
+  { url: CAT('documentary'), category: 'documentary', satellite: 'مستند 👑', free: false, desc: 'مستند — ویژه اشتراک' },
+  { url: CAT('sports'),   category: 'sports', satellite: 'ورزشی', free: true, desc: 'شبکه ورزشی' },
+  { url: CAT('news'),     category: 'news', satellite: 'اخبار', free: true, desc: 'شبکه خبری' },
+
+  // ---- Adult 18+ (VIP only, needs VPN) ----
+  { url: CAT('xxx'), category: 'adult_18', satellite: 'VIP 18+', free: false, plus18: true, desc: 'بزرگسالان ۱۸+ — با فیلترشکن' },
+  { url: 'https://raw.githubusercontent.com/joetrombose/tv/master/ADULT_XXX.m3u',
+    category: 'adult_18', satellite: 'VIP 18+', free: false, plus18: true, desc: 'بزرگسالان ۱۸+ — با فیلترشکن' },
+  { url: 'https://raw.githubusercontent.com/dyjldq/my-m3u/master/adult-list/XXX.m3u',
+    category: 'adult_18', satellite: 'VIP 18+', free: false, plus18: true, desc: 'بزرگسالان ۱۸+ — با فیلترشکن' },
 ];
 
 const LS_KEY_NEW = 'nini_tv_new_channels';
 const LS_KEY_TIME = 'nini_tv_last_sync';
-const SYNC_INTERVAL_MS = 12 * 3600 * 1000; // 12 hours
-const MAX_PER_FEED = 120; // keep the app light
+const SYNC_INTERVAL_MS = 6 * 3600 * 1000; // 6 hours
+const MAX_PER_FEED = 150; // keep the app light
 
 function parseM3U(text: string, feed: Feed): Channel[] {
   const out: Channel[] = [];

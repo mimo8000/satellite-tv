@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tv, Film, Clapperboard, Palette, Crown } from 'lucide-react';
+import { Tv, Film, Clapperboard, Palette, Crown, Ghost } from 'lucide-react';
 import { ActiveTab } from '../types';
 import { ThemeConfig } from '../theme';
 
@@ -16,6 +16,7 @@ export const BottomNav: React.FC<Props> = ({ activeTab, onSelectTab, theme, adul
     { id: 'movies', label: 'فیلم', icon: <Film className="w-5 h-5" /> },
     { id: 'series', label: 'سریال', icon: <Clapperboard className="w-5 h-5" /> },
     { id: 'cartoon', label: 'کارتون', icon: <Palette className="w-5 h-5" /> },
+    { id: 'horror', label: 'ترسناک', icon: <Ghost className="w-5 h-5" /> },
     { id: 'adult', label: '۱۸+', icon: <Crown className="w-5 h-5" /> },
   ];
 

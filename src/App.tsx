@@ -20,6 +20,7 @@ const CAT_OF_TAB: Record<string, string[]> = {
   movies: ['movies'],
   series: ['series'],
   cartoon: ['cartoon', 'kids'],
+  horror: ['horror'],
   adult: ['adult_18'],
   live: ['live'],
 };
@@ -195,6 +196,7 @@ export default function App() {
     movies: { t: '🎬 فیلم‌های سینمایی', s: 'دوبله فارسی — 👑 ویژه اشتراک' },
     series: { t: '📺 سریال‌ها', s: 'دوبله فارسی — 👑 ویژه اشتراک' },
     cartoon: { t: '🧸 کارتونی‌ها', s: 'دوبله فارسی — 👑 ویژه اشتراک' },
+    horror: { t: '👻 ترسناک و هیجانی', s: 'فیلم ترسناک — 👑 ویژه اشتراک' },
     adult: { t: '🔞 بزرگسالان ۱۸+', s: '👑 فقط با کد اشتراک + رمز ۱۸+' },
     live: { t: '📡 شبکه‌های زنده ایران', s: 'شبکه‌های فارسی — رایگان' },
   };
@@ -277,7 +279,7 @@ export default function App() {
           </div>
         )}
 
-        {(activeTab === 'movies' || activeTab === 'series' || activeTab === 'cartoon' || activeTab === 'adult' || activeTab === 'live') && (
+        {(activeTab === 'movies' || activeTab === 'series' || activeTab === 'cartoon' || activeTab === 'horror' || activeTab === 'adult' || activeTab === 'live') && (
           <div className="space-y-4 animate-in fade-in-50">
             <div className="flex items-center justify-between px-1">
               <div>
