@@ -2,6 +2,7 @@ export type ThemeColor = 'green' | 'pink' | 'black' | 'yellow';
 
 export type ChannelCategory = 
   | 'all'
+  | 'live'
   | 'adult_18'
   | 'movies'
   | 'series'
@@ -54,7 +55,7 @@ export interface DishAlignment {
   coverage: string;
 }
 
-export type ActiveTab = 'player' | 'channels' | 'frequencies' | 'm3u' | 'settings';
+export type ActiveTab = 'player' | 'movies' | 'series' | 'cartoon' | 'adult' | 'live' | 'settings';
 
 export type NiniTier = 'standard' | 'vip_premium' | 'admin_unlimited';
 

@@ -1,12 +1,7 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import React, { useState, useEffect } from 'react';
-import { ActiveTab, Channel, ThemeColor } from './types';
+import React, { useState, useEffect, useMemo } from 'react';
+import { ActiveTab, Channel, ThemeColor, NiniSession } from './types';
 import { INITIAL_CHANNELS } from './data/channels';
-import { THEMES, ThemeConfig } from './theme';
+import { THEMES } from './theme';
 import { Navbar } from './components/Navbar';
 import { VideoPlayer } from './components/VideoPlayer';
 import { ChannelList } from './components/ChannelList';
@@ -18,84 +13,133 @@ import { ParentalLockModal } from './components/ParentalLockModal';
 import { PWAInstallBanner } from './components/PWAInstallBanner';
 import { AuthGate, loadSession, saveSession } from './components/AuthGate';
 import { ProModal } from './components/ProModal';
-import { NiniSession } from './types';
-import { Tv, Radio, Flame, Sparkles, ChevronRight, ChevronLeft } from 'lucide-react';
+import { syncNewChannels, loadNewChannels } from './utils/liveSync';
+import { Tv, Globe, Settings, Sparkles } from 'lucide-react';
+
+const CAT_OF_TAB: Record<string, string[]> = {
+  movies: ['movies'],
+  series: ['series'],
+  cartoon: ['cartoon', 'kids'],
+  adult: ['adult_18'],
+  live: ['live'],
+};
 
 export default function App() {
-  // Subscription gate — session restored from localStorage (HMAC-verified code)
+  // ---------- subscription gate ----------
   const [session, setSession] = useState<NiniSession | null>(() => loadSession());
-
   const handleLogout = () => {
     saveSession(null);
     setSession(null);
   };
 
-  // Theme state: defaults to green as requested, supports green, pink, black, yellow
+  // ---------- theme ----------
   const [themeId, setThemeId] = useState<ThemeColor>(() => {
     const saved = localStorage.getItem('sat_theme');
-    if (saved && (saved === 'green' || saved === 'pink' || saved === 'black' || saved === 'yellow')) {
-      return saved as ThemeColor;
-    }
+    if (saved && ['green', 'pink', 'black', 'yellow'].includes(saved)) return saved as ThemeColor;
     return 'green';
   });
+  const currentTheme = THEMES[themeId] || THEMES.green;
 
-  const currentTheme: ThemeConfig = THEMES[themeId] || THEMES.green;
+  const handleSelectTheme = (newTheme: ThemeColor) => {
+    setThemeId(newTheme);
+    localStorage.setItem('sat_theme', newTheme);
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) metaTheme.setAttribute('content', THEMES[newTheme].colorCode);
+  };
 
-  // Active navigation tab
+  // ---------- navigation ----------
   const [activeTab, setActiveTab] = useState<ActiveTab>('player');
 
-  // Channels state
+  // ---------- channels: built-in + custom + auto-synced ----------
   const [channels, setChannels] = useState<Channel[]>(() => {
     try {
       const saved = localStorage.getItem('sat_custom_channels');
       if (saved) {
-        const custom = JSON.parse(saved);
-        return [...INITIAL_CHANNELS, ...custom];
+        const custom = JSON.parse(saved) as Channel[];
+        return [...custom, ...INITIAL_CHANNELS];
       }
-    } catch (e) {
-      console.error(e);
-    }
+    } catch {}
     return INITIAL_CHANNELS;
   });
 
-  // Selected Channel for player
-  const [selectedChannel, setSelectedChannel] = useState<Channel>(() => {
-    return channels[0];
-  });
+  const [syncedChannels, setSyncedChannels] = useState<Channel[]>(() => loadNewChannels());
+  const [syncMsg, setSyncMsg] = useState<string | null>(null);
 
-  // Favorites
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const known = new Set([...INITIAL_CHANNELS, ...loadNewChannels()].map((c) => c.streamUrl));
+      const n = await syncNewChannels(known);
+      if (cancelled) return;
+      if (n > 0) {
+        setSyncedChannels(loadNewChannels());
+        setSyncMsg(`✨ ${n} کانال تازه (فیلم/سریال/کارتون/۱۸+) خودکار اضافه شد`);
+        setTimeout(() => setSyncMsg(null), 6000);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const allChannels = useMemo(() => {
+    const seen = new Set<string>();
+    const out: Channel[] = [];
+    for (const c of [...channels, ...syncedChannels]) {
+      if (!c || !c.streamUrl || seen.has(c.streamUrl)) continue;
+      seen.add(c.streamUrl);
+      out.push(c);
+    }
+    return out;
+  }, [channels, syncedChannels]);
+
+  const tabChannels = useMemo(() => {
+    const cats = CAT_OF_TAB[activeTab];
+    if (!cats) return allChannels;
+    return allChannels.filter((c) => cats.includes(c.category));
+  }, [activeTab, allChannels]);
+
+  // ---------- selection ----------
+  const [selectedChannel, setSelectedChannel] = useState<Channel>(
+    () => allChannels[0] || INITIAL_CHANNELS[0],
+  );
+
+  // ---------- favorites ----------
   const [favorites, setFavorites] = useState<string[]>(() => {
     try {
       const saved = localStorage.getItem('sat_favorites');
-      return saved ? JSON.parse(saved) : ['glamour-latelounge', 'cinema-persia-hd', 'fashion-bikini-tv'];
+      return saved ? JSON.parse(saved) : [];
     } catch {
-      return ['glamour-latelounge', 'cinema-persia-hd'];
+      return [];
     }
   });
 
-  // 18+ Parental Lock
+  const handleToggleFavorite = (id: string) => {
+    setFavorites((prev) => {
+      const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id];
+      localStorage.setItem('sat_favorites', JSON.stringify(next));
+      return next;
+    });
+  };
+
+  // ---------- 18+ lock ----------
   const [isLocked18Plus, setIsLocked18Plus] = useState<boolean>(true);
   const [showUnlockModal, setShowUnlockModal] = useState<boolean>(false);
   const [showProModal, setShowProModal] = useState<boolean>(false);
 
-  // Sync theme changes to localStorage and HTML theme-color
-  const handleSelectTheme = (newTheme: ThemeColor) => {
-    setThemeId(newTheme);
-    localStorage.setItem('sat_theme', newTheme);
-
-    // Update browser theme-color meta tag
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    if (metaTheme) {
-      metaTheme.setAttribute('content', THEMES[newTheme].colorCode);
+  // ---------- channel actions ----------
+  const handleChannelSelect = (channel: Channel) => {
+    if (channel.is18Plus && isLocked18Plus) {
+      setShowUnlockModal(true);
+      return;
     }
-  };
-
-  const handleToggleFavorite = (id: string) => {
-    setFavorites((prev) => {
-      const next = prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id];
-      localStorage.setItem('sat_favorites', JSON.stringify(next));
-      return next;
-    });
+    if (channel.free === false && !session?.isVip) {
+      setShowProModal(true);
+      return;
+    }
+    setSelectedChannel(channel);
+    setActiveTab('player');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleAddChannel = (newChan: Channel) => {
@@ -116,89 +160,76 @@ export default function App() {
       localStorage.setItem('sat_custom_channels', JSON.stringify(customOnly));
       return updated;
     });
-    if (newChans.length > 0) {
-      setSelectedChannel(newChans[0]);
-    }
-    setActiveTab('channels');
+    if (newChans.length > 0) setSelectedChannel(newChans[0]);
+    setActiveTab('player');
   };
 
   const handleResetData = () => {
-    if (window.confirm('آیا از بازنشانی شبکه‌ها به لیست پیش‌فرض اطمینان دارید؟')) {
+    if (window.confirm('شبکه‌های افزوده‌شده و علاقه‌مندی‌ها پاک شوند و به لیست پیش‌فرض برگردد؟')) {
       localStorage.removeItem('sat_custom_channels');
       localStorage.removeItem('sat_favorites');
+      localStorage.removeItem('nini_tv_new_channels');
       setChannels(INITIAL_CHANNELS);
+      setSyncedChannels([]);
       setSelectedChannel(INITIAL_CHANNELS[0]);
-      setFavorites(['glamour-latelounge', 'cinema-persia-hd']);
-      alert('شبکه‌ها با موفقیت به تنظیمات اولیه بازگشتند.');
+      setFavorites([]);
     }
   };
 
-  const handleChannelSelect = (channel: Channel) => {
-    if (channel.is18Plus && isLocked18Plus) {
-      setShowUnlockModal(true);
-      return;
-    }
-    // PRO gate: non-free channels require a VIP subscription
-    if (channel.free === false && !session?.isVip) {
-      setShowProModal(true);
-      return;
-    }
-    setSelectedChannel(channel);
-    // Smoothly switch to player view if on mobile/small screens
-    if (activeTab !== 'player') {
-      setActiveTab('player');
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  // Channel navigation (Next / Prev)
-  const currentIdx = channels.findIndex((c) => c.id === selectedChannel.id);
+  // ---------- next / prev within current tab list ----------
+  const navList = tabChannels.length > 0 ? tabChannels : allChannels;
+  const currentIdx = navList.findIndex((c) => c.id === selectedChannel.id);
   const handleNextChannel = () => {
-    if (currentIdx !== -1) {
-      const nextIdx = (currentIdx + 1) % channels.length;
-      setSelectedChannel(channels[nextIdx]);
-    }
+    if (currentIdx !== -1) setSelectedChannel(navList[(currentIdx + 1) % navList.length]);
   };
   const handlePrevChannel = () => {
-    if (currentIdx !== -1) {
-      const prevIdx = (currentIdx - 1 + channels.length) % channels.length;
-      setSelectedChannel(channels[prevIdx]);
-    }
+    if (currentIdx !== -1) setSelectedChannel(navList[(currentIdx - 1 + navList.length) % navList.length]);
   };
 
+  // ---------- gate ----------
   if (!session) {
     return <AuthGate onAuthenticated={setSession} />;
   }
+
+  const listTitle: Record<string, { t: string; s: string }> = {
+    movies: { t: '🎬 فیلم‌های سینمایی', s: 'فیلم روز دنیا — خارجی، هندی، کره‌ای و ایرانی' },
+    series: { t: '📺 سریال‌ها', s: 'سریال و مجموعه‌های تصویری' },
+    cartoon: { t: '🧸 کارتونی‌ها', s: 'انیمیشن و کارتون کودک و نوجوان' },
+    adult: { t: '🔞 بزرگسالان ۱۸+', s: 'مخصوص بزرگسالان — با فیلترشکن پخش می‌شود' },
+    live: { t: '📡 شبکه‌های زنده ایران', s: 'شبکه‌های فارسی — بدون فیلترشکن' },
+  };
 
   return (
     <div
       id="satellite-tv-root"
       className={`min-h-screen ${currentTheme.bgGradient} transition-colors duration-500 pb-20 flex flex-col`}
     >
-      {/* Top Android simulated Bar & Main Header with Theme buttons */}
       <Navbar
         currentTheme={currentTheme}
         onSelectTheme={handleSelectTheme}
         activeSatelliteName={selectedChannel.satellite}
         isLocked18Plus={isLocked18Plus}
         onToggleLock={() => {
-          if (isLocked18Plus) {
-            setShowUnlockModal(true);
-          } else {
-            setIsLocked18Plus(true);
-          }
+          if (isLocked18Plus) setShowUnlockModal(true);
+          else setIsLocked18Plus(true);
         }}
       />
 
-      {/* In-App PWA Install Banner */}
+      {/* auto-sync toast */}
+      {syncMsg && (
+        <div className="max-w-7xl w-full mx-auto px-3 pt-2">
+          <div className="rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-200 text-xs font-bold px-4 py-2.5 flex items-center gap-2 animate-in fade-in">
+            <Sparkles className="w-4 h-4" />
+            <span>{syncMsg}</span>
+          </div>
+        </div>
+      )}
+
       <PWAInstallBanner theme={currentTheme} />
 
-      {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-4 py-3 space-y-4">
-        {/* Tab 1: Live Player View */}
         {activeTab === 'player' && (
           <div className="space-y-4">
-            {/* Primary Video Player */}
             <VideoPlayer
               channel={selectedChannel}
               theme={currentTheme}
@@ -208,60 +239,64 @@ export default function App() {
               onRequestPro={() => setShowProModal(true)}
             />
 
-            {/* Quick Channel Zap Bar (Next / Prev channel buttons and quick channel carousel) */}
-            <div className={`p-3 rounded-2xl border ${currentTheme.cardBg} ${currentTheme.cardBorder} flex items-center justify-between gap-2 shadow-lg`}>
+            {/* quick category shortcuts */}
+            <div className="grid grid-cols-2 gap-2">
               <button
-                onClick={handlePrevChannel}
-                className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold flex items-center gap-1 transition active:scale-95"
-                title="شبکه قبلی"
+                onClick={() => setActiveTab('live')}
+                className={`py-3 rounded-2xl border ${currentTheme.cardBorder} ${currentTheme.cardBg} text-xs font-black flex items-center justify-center gap-2`}
               >
-                <ChevronRight className="w-4 h-4" />
-                <span className="hidden sm:inline">شبکه قبلی</span>
+                <Globe className="w-4 h-4 text-emerald-400" />
+                <span>شبکه‌های ایران ({allChannels.filter((c) => c.category === 'live').length})</span>
               </button>
-
-              <div className="flex items-center gap-2 overflow-x-auto scrollbar-none py-1">
-                {channels.slice(0, 10).map((ch) => (
-                  <button
-                    key={ch.id}
-                    onClick={() => handleChannelSelect(ch)}
-                    className={`px-3 py-1 rounded-xl text-xs whitespace-nowrap transition border ${
-                      ch.id === selectedChannel.id
-                        ? `${currentTheme.primaryBtn} font-bold border-transparent`
-                        : 'bg-black/30 border-white/10 opacity-70 hover:opacity-100'
-                    }`}
-                  >
-                    {ch.persianName}
-                  </button>
-                ))}
-              </div>
-
               <button
-                onClick={handleNextChannel}
-                className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold flex items-center gap-1 transition active:scale-95"
-                title="شبکه بعدی"
+                onClick={() => setActiveTab('settings')}
+                className={`py-3 rounded-2xl border ${currentTheme.cardBorder} ${currentTheme.cardBg} text-xs font-black flex items-center justify-center gap-2`}
               >
-                <span className="hidden sm:inline">شبکه بعدی</span>
-                <ChevronLeft className="w-4 h-4" />
+                <Settings className="w-4 h-4 text-zinc-300" />
+                <span>تنظیمات و افزودن M3U</span>
               </button>
             </div>
 
-            {/* Quick Channel Guide inside Player Tab */}
-            <div className="pt-2">
-              <div className="flex items-center justify-between mb-3 px-1">
-                <div className="flex items-center gap-2">
-                  <Radio className="w-4 h-4 text-emerald-400" />
-                  <h3 className="font-extrabold text-sm sm:text-base">سایر شبکه‌های ماهواره‌ای</h3>
-                </div>
+            {/* current tab quick carousel */}
+            <div className={`p-3 rounded-2xl border ${currentTheme.cardBg} ${currentTheme.cardBorder} flex items-center gap-2 overflow-x-auto scrollbar-none`}>
+              <Tv className="w-4 h-4 shrink-0 text-yellow-400" />
+              {navList.slice(0, 14).map((ch) => (
                 <button
-                  onClick={() => setActiveTab('channels')}
-                  className={`text-xs font-bold underline ${currentTheme.accentText}`}
+                  key={ch.id}
+                  onClick={() => handleChannelSelect(ch)}
+                  className={`px-3 py-1.5 rounded-xl text-xs whitespace-nowrap transition border ${
+                    ch.id === selectedChannel.id
+                      ? `${currentTheme.primaryBtn} font-bold border-transparent`
+                      : 'bg-black/30 border-white/10 opacity-70 hover:opacity-100'
+                  }`}
                 >
-                  مشاهده همه شبکه‌ها ({channels.length})
+                  {ch.persianName}
                 </button>
-              </div>
+              ))}
+            </div>
+          </div>
+        )}
 
+        {(activeTab === 'movies' || activeTab === 'series' || activeTab === 'cartoon' || activeTab === 'adult' || activeTab === 'live') && (
+          <div className="space-y-4 animate-in fade-in-50">
+            <div className="flex items-center justify-between px-1">
+              <div>
+                <h2 className="font-extrabold text-lg">{listTitle[activeTab].t}</h2>
+                <p className="text-xs opacity-70">{listTitle[activeTab].s}</p>
+              </div>
+              <span className={`text-[11px] font-bold px-2.5 py-1 rounded-xl ${currentTheme.badgeBg}`}>
+                {tabChannels.length} کانال
+              </span>
+            </div>
+
+            {tabChannels.length === 0 ? (
+              <div className={`p-10 rounded-3xl border ${currentTheme.cardBorder} ${currentTheme.cardBg} text-center`}>
+                <p className="text-sm font-bold text-white">هنوز کانالی در این دسته نیست</p>
+                <p className="text-xs opacity-60 mt-1">با افزودن لیست M3U از تنظیمات، کانال اضافه کن</p>
+              </div>
+            ) : (
               <ChannelList
-                channels={channels}
+                channels={tabChannels}
                 selectedChannel={selectedChannel}
                 onSelectChannel={handleChannelSelect}
                 favorites={favorites}
@@ -270,72 +305,38 @@ export default function App() {
                 isLocked18Plus={isLocked18Plus}
                 onRequestUnlock18Plus={() => setShowUnlockModal(true)}
               />
-            </div>
+            )}
           </div>
         )}
 
-        {/* Tab 2: Channels Catalog */}
-        {activeTab === 'channels' && (
-          <div className="space-y-4 animate-in fade-in-50">
-            <div className="flex items-center justify-between px-1">
-              <div>
-                <h2 className="font-extrabold text-lg">لیست جامع شبکه‌های ماهواره</h2>
-                <p className="text-xs opacity-70">دسته‌بندی، فرکانس‌ها و پخش آنلاین شبکه‌های فارسی و بین‌المللی</p>
-              </div>
-            </div>
-
-            <ChannelList
-              channels={channels}
-              selectedChannel={selectedChannel}
-              onSelectChannel={handleChannelSelect}
-              favorites={favorites}
-              onToggleFavorite={handleToggleFavorite}
-              theme={currentTheme}
-              isLocked18Plus={isLocked18Plus}
-              onRequestUnlock18Plus={() => setShowUnlockModal(true)}
-            />
-          </div>
-        )}
-
-        {/* Tab 3: Frequency Guide & Satellite Transponders */}
-        {activeTab === 'frequencies' && (
-          <div className="animate-in fade-in-50">
-            <FrequencyGuide theme={currentTheme} />
-          </div>
-        )}
-
-        {/* Tab 4: Add Custom Stream & M3U */}
-        {activeTab === 'm3u' && (
-          <div className="animate-in fade-in-50">
-            <CustomStreamModal
-              onAddChannel={handleAddChannel}
-              onAddMultipleChannels={handleAddMultipleChannels}
-              theme={currentTheme}
-            />
-          </div>
-        )}
-
-        {/* Tab 5: Settings & Themes */}
         {activeTab === 'settings' && (
-          <div className="animate-in fade-in-50">
+          <div className="space-y-4 animate-in fade-in-50">
             <SettingsView
               currentTheme={currentTheme}
               onSelectTheme={handleSelectTheme}
               isLocked18Plus={isLocked18Plus}
               onToggleLock={() => {
-                if (isLocked18Plus) {
-                  setShowUnlockModal(true);
-                } else {
-                  setIsLocked18Plus(true);
-                }
+                if (isLocked18Plus) setShowUnlockModal(true);
+                else setIsLocked18Plus(true);
               }}
               onRequestResetData={handleResetData}
             />
+            <CustomStreamModal
+              onAddChannel={handleAddChannel}
+              onAddMultipleChannels={handleAddMultipleChannels}
+              theme={currentTheme}
+            />
+            <FrequencyGuide theme={currentTheme} />
+            <button
+              onClick={handleLogout}
+              className="w-full py-3 rounded-2xl bg-red-950/50 hover:bg-red-900/60 border border-red-800/40 text-red-300 text-xs font-bold"
+            >
+              خروج از اشتراک (ورود با کد دیگر)
+            </button>
           </div>
         )}
       </main>
 
-      {/* PRO upsell modal */}
       <ProModal
         isOpen={showProModal}
         onClose={() => setShowProModal(false)}
@@ -343,7 +344,6 @@ export default function App() {
         channelName={selectedChannel?.persianName}
       />
 
-      {/* Parental Lock Modal for 18+ Channels */}
       <ParentalLockModal
         isOpen={showUnlockModal}
         onClose={() => setShowUnlockModal(false)}
@@ -354,12 +354,11 @@ export default function App() {
         theme={currentTheme}
       />
 
-      {/* Android Bottom Navigation Bar */}
       <BottomNav
         activeTab={activeTab}
         onSelectTab={setActiveTab}
         theme={currentTheme}
-        channelsCount={channels.length}
+        adultUnlocked={!isLocked18Plus}
       />
     </div>
   );
