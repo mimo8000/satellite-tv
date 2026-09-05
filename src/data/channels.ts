@@ -2,7 +2,7 @@ import { Channel } from '../types';
 
 // Auto-generated — every URL live-tested (#EXTM3U probe).
 export const INITIAL_CHANNELS: Channel[] = [
- {
+{
   "id": "liv-4-kurd-0",
   "name": "4 Kurd",
   "persianName": "4 Kurd",
@@ -18,7 +18,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-abadan-1",
   "name": "Abadan",
   "persianName": "Abadan",
@@ -34,7 +34,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-afra-film-2",
   "name": "Afra Film",
   "persianName": "Afra Film",
@@ -50,7 +50,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-alborz-3",
   "name": "Alborz",
   "persianName": "Alborz",
@@ -66,7 +66,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-arax-tv-4",
   "name": "Arax TV",
   "persianName": "Arax TV",
@@ -82,7 +82,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-arko-tv-5",
   "name": "Arko TV",
   "persianName": "Arko TV",
@@ -98,7 +98,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-arvan-tv-6",
   "name": "Arvan TV",
   "persianName": "Arvan TV",
@@ -114,7 +114,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-atrak-7",
   "name": "Atrak",
   "persianName": "Atrak",
@@ -130,7 +130,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-ava-series-8",
   "name": "AVA Series",
   "persianName": "AVA Series",
@@ -146,7 +146,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-bravo-farsi-tv-360p-9",
   "name": "Bravo Farsi TV (360p)",
   "persianName": "Bravo Farsi TV (360p)",
@@ -162,7 +162,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-cafe-film-10",
   "name": "Cafe Film",
   "persianName": "Cafe Film",
@@ -178,7 +178,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-cafe-trade-tv-11",
   "name": "Cafe Trade TV",
   "persianName": "Cafe Trade TV",
@@ -194,7 +194,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-classic-tv-12",
   "name": "Classic TV",
   "persianName": "Classic TV",
@@ -210,7 +210,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-datis-tv-13",
   "name": "Datis TV",
   "persianName": "Datis TV",
@@ -226,7 +226,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-dena-14",
   "name": "Dena",
   "persianName": "Dena",
@@ -242,7 +242,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-energy-15",
   "name": "Energy",
   "persianName": "Energy",
@@ -258,7 +258,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-eshragh-16",
   "name": "Eshragh",
   "persianName": "Eshragh",
@@ -274,7 +274,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-fars-17",
   "name": "Fars",
   "persianName": "Fars",
@@ -290,7 +290,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-fx-tv-1-18",
   "name": "FX TV 1",
   "persianName": "FX TV 1",
@@ -306,7 +306,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-fx-tv-2-19",
   "name": "FX TV 2",
   "persianName": "FX TV 2",
@@ -322,7 +322,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-gem-entertainment-20",
   "name": "GEM Entertainment",
   "persianName": "GEM Entertainment",
@@ -338,7 +338,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-gem-food-21",
   "name": "GEM Food",
   "persianName": "GEM Food",
@@ -354,7 +354,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-gem-junior-22",
   "name": "GEM Junior",
   "persianName": "GEM Junior",
@@ -370,7 +370,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-gold-star-23",
   "name": "Gold Star",
   "persianName": "Gold Star",
@@ -386,7 +386,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-golkhane-tv-24",
   "name": "Golkhane TV",
   "persianName": "Golkhane TV",
@@ -402,7 +402,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-grand-cinema-25",
   "name": "Grand Cinema",
   "persianName": "Grand Cinema",
@@ -418,7 +418,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-habib-tv-26",
   "name": "Habib TV",
   "persianName": "Habib TV",
@@ -434,7 +434,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-hamedan-27",
   "name": "Hamedan",
   "persianName": "Hamedan",
@@ -450,7 +450,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-hamoon-28",
   "name": "Hamoon",
   "persianName": "Hamoon",
@@ -466,7 +466,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-icc-plus-1080p-29",
   "name": "ICC Plus (1080p)",
   "persianName": "ICC Plus (1080p)",
@@ -482,7 +482,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-icnet-2-30",
   "name": "icnet 2",
   "persianName": "icnet 2",
@@ -498,7 +498,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-icnet-3-31",
   "name": "icnet 3",
   "persianName": "icnet 3",
@@ -514,7 +514,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-ifilm-2-32",
   "name": "iFilm 2",
   "persianName": "iFilm 2",
@@ -530,7 +530,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-ifilm-arabic-33",
   "name": "iFilm Arabic",
   "persianName": "iFilm Arabic",
@@ -546,7 +546,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-ifilm-english-34",
   "name": "iFilm English",
   "persianName": "iFilm English",
@@ -562,7 +562,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-ifilm-persian-35",
   "name": "iFilm Persian",
   "persianName": "iFilm Persian",
@@ -578,7 +578,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-ilam-36",
   "name": "Ilam",
   "persianName": "Ilam",
@@ -594,7 +594,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-iran-nama-37",
   "name": "Iran Nama",
   "persianName": "Iran Nama",
@@ -610,7 +610,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-iran-press-38",
   "name": "Iran Press",
   "persianName": "Iran Press",
@@ -626,7 +626,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-irib1-39",
   "name": "IRIB1",
   "persianName": "IRIB1",
@@ -642,7 +642,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-irib2-40",
   "name": "IRIB2",
   "persianName": "IRIB2",
@@ -658,7 +658,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-irib3-41",
   "name": "IRIB3",
   "persianName": "IRIB3",
@@ -674,7 +674,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-irib4-42",
   "name": "IRIB4",
   "persianName": "IRIB4",
@@ -690,7 +690,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-irib-uhd-2160p-43",
   "name": "IRIB UHD (2160p)",
   "persianName": "IRIB UHD (2160p)",
@@ -706,7 +706,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-irinn2-live-farsi-news-44",
   "name": "IRINN2 Live Farsi News",
   "persianName": "IRINN2 Live Farsi News",
@@ -722,7 +722,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-isfahan-45",
   "name": "Isfahan",
   "persianName": "Isfahan",
@@ -738,7 +738,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-jahanbin-46",
   "name": "Jahanbin",
   "persianName": "Jahanbin",
@@ -754,7 +754,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-kanal-jadid-47",
   "name": "Kanal Jadid",
   "persianName": "Kanal Jadid",
@@ -770,7 +770,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-kerman-48",
   "name": "Kerman",
   "persianName": "Kerman",
@@ -786,7 +786,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-khalij-e-fars-49",
   "name": "Khalij-e Fars",
   "persianName": "Khalij-e Fars",
@@ -802,7 +802,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-khavaran-50",
   "name": "Khavaran",
   "persianName": "Khavaran",
@@ -818,7 +818,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-khorasan-razavi-51",
   "name": "Khorasan Razavi",
   "persianName": "Khorasan Razavi",
@@ -834,7 +834,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-khozestan-52",
   "name": "Khozestan",
   "persianName": "Khozestan",
@@ -850,7 +850,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-kish-53",
   "name": "Kish",
   "persianName": "Kish",
@@ -866,7 +866,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-kordestan-54",
   "name": "Kordestan",
   "persianName": "Kordestan",
@@ -882,7 +882,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-labbayk-tv-55",
   "name": "Labbayk TV",
   "persianName": "Labbayk TV",
@@ -898,7 +898,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-mahabad-56",
   "name": "Mahabad",
   "persianName": "Mahabad",
@@ -914,7 +914,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-meta-film-tv-57",
   "name": "Meta Film TV",
   "persianName": "Meta Film TV",
@@ -930,7 +930,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-mostanad-58",
   "name": "Mostanad",
   "persianName": "Mostanad",
@@ -946,7 +946,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-namayesh-59",
   "name": "Namayesh",
   "persianName": "Namayesh",
@@ -962,7 +962,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-nasim-60",
   "name": "Nasim",
   "persianName": "Nasim",
@@ -978,7 +978,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-newflix-61",
   "name": "Newflix",
   "persianName": "Newflix",
@@ -994,7 +994,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-noor-62",
   "name": "Noor",
   "persianName": "Noor",
@@ -1010,7 +1010,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-ofogh-63",
   "name": "Ofogh",
   "persianName": "Ofogh",
@@ -1026,7 +1026,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-omid-64",
   "name": "Omid",
   "persianName": "Omid",
@@ -1042,7 +1042,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-omide-iran-65",
   "name": "Omide Iran",
   "persianName": "Omide Iran",
@@ -1058,7 +1058,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-palestine-66",
   "name": "Palestine",
   "persianName": "Palestine",
@@ -1074,7 +1074,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-pars-tv-67",
   "name": "Pars TV",
   "persianName": "Pars TV",
@@ -1090,7 +1090,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-cinema-68",
   "name": "Persiana Cinema",
   "persianName": "Persiana Cinema",
@@ -1106,7 +1106,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-comedy-69",
   "name": "Persiana Comedy",
   "persianName": "Persiana Comedy",
@@ -1122,7 +1122,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-docs-70",
   "name": "Persiana Docs",
   "persianName": "Persiana Docs",
@@ -1138,7 +1138,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-family-71",
   "name": "Persiana Family",
   "persianName": "Persiana Family",
@@ -1154,7 +1154,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-fight-72",
   "name": "Persiana Fight",
   "persianName": "Persiana Fight",
@@ -1170,7 +1170,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-folk-73",
   "name": "Persiana Folk",
   "persianName": "Persiana Folk",
@@ -1186,7 +1186,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-iranian-74",
   "name": "Persiana Iranian",
   "persianName": "Persiana Iranian",
@@ -1202,7 +1202,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-junior-75",
   "name": "Persiana Junior",
   "persianName": "Persiana Junior",
@@ -1218,7 +1218,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-korea-76",
   "name": "Persiana Korea",
   "persianName": "Persiana Korea",
@@ -1234,7 +1234,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-latino-77",
   "name": "Persiana Latino",
   "persianName": "Persiana Latino",
@@ -1250,7 +1250,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-medical-78",
   "name": "Persiana Medical",
   "persianName": "Persiana Medical",
@@ -1266,7 +1266,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-music-79",
   "name": "Persiana Music",
   "persianName": "Persiana Music",
@@ -1282,7 +1282,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-nostalgia-80",
   "name": "Persiana Nostalgia",
   "persianName": "Persiana Nostalgia",
@@ -1298,7 +1298,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-plus-81",
   "name": "Persiana Plus",
   "persianName": "Persiana Plus",
@@ -1314,7 +1314,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-reality-82",
   "name": "Persiana Reality",
   "persianName": "Persiana Reality",
@@ -1330,7 +1330,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-series-83",
   "name": "Persiana Series",
   "persianName": "Persiana Series",
@@ -1346,7 +1346,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-teen-84",
   "name": "Persiana Teen",
   "persianName": "Persiana Teen",
@@ -1362,7 +1362,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-travel-85",
   "name": "Persiana Travel",
   "persianName": "Persiana Travel",
@@ -1378,7 +1378,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-turkiye-86",
   "name": "Persiana Turkiye",
   "persianName": "Persiana Turkiye",
@@ -1394,7 +1394,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-persiana-vibe-87",
   "name": "Persiana Vibe",
   "persianName": "Persiana Vibe",
@@ -1410,7 +1410,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-pooya-nahal-88",
   "name": "Pooya & Nahal",
   "persianName": "Pooya & Nahal",
@@ -1426,7 +1426,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-pooya-tv-plus-89",
   "name": "Pooya TV Plus",
   "persianName": "Pooya TV Plus",
@@ -1442,7 +1442,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-press-tv-french-1080p-90",
   "name": "Press TV French (1080p)",
   "persianName": "Press TV French (1080p)",
@@ -1458,7 +1458,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-qazvin-91",
   "name": "Qazvin",
   "persianName": "Qazvin",
@@ -1474,7 +1474,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-quran-92",
   "name": "Quran",
   "persianName": "Quran",
@@ -1490,7 +1490,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-radio-javan-tv-1080p-93",
   "name": "Radio Javan TV (1080p)",
   "persianName": "Radio Javan TV (1080p)",
@@ -1506,7 +1506,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-rasoulallahtv-1080p-94",
   "name": "RasoulallahTv (1080p)",
   "persianName": "RasoulallahTv (1080p)",
@@ -1522,7 +1522,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-razavi-tv-95",
   "name": "Razavi TV",
   "persianName": "Razavi TV",
@@ -1538,7 +1538,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-roya-tv-96",
   "name": "Roya TV",
   "persianName": "Roya TV",
@@ -1554,7 +1554,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-sabalan-97",
   "name": "Sabalan",
   "persianName": "Sabalan",
@@ -1570,7 +1570,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-sabz-98",
   "name": "Sabz",
   "persianName": "Sabz",
@@ -1586,7 +1586,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-sahand-99",
   "name": "Sahand",
   "persianName": "Sahand",
@@ -1602,7 +1602,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-salamat-100",
   "name": "Salamat",
   "persianName": "Salamat",
@@ -1618,7 +1618,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-sarbedaran-101",
   "name": "Sarbedaran",
   "persianName": "Sarbedaran",
@@ -1634,7 +1634,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-semnan-102",
   "name": "Semnan",
   "persianName": "Semnan",
@@ -1650,7 +1650,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-sepehr-103",
   "name": "Sepehr",
   "persianName": "Sepehr",
@@ -1666,7 +1666,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-sl-1-104",
   "name": "SL 1",
   "persianName": "SL 1",
@@ -1682,7 +1682,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-sl-2-105",
   "name": "SL 2",
   "persianName": "SL 2",
@@ -1698,7 +1698,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-t2-tv-106",
   "name": "T2 TV",
   "persianName": "T2 TV",
@@ -1714,7 +1714,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-tabarestan-107",
   "name": "Tabarestan",
   "persianName": "Tabarestan",
@@ -1730,7 +1730,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-tamasha-108",
   "name": "Tamasha",
   "persianName": "Tamasha",
@@ -1746,7 +1746,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-tekyemadahi-109",
   "name": "Tekyemadahi",
   "persianName": "Tekyemadahi",
@@ -1762,7 +1762,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-tv-itn-110",
   "name": "TV ITN",
   "persianName": "TV ITN",
@@ -1778,7 +1778,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-tva-nava-111",
   "name": "TVA Nava",
   "persianName": "TVA Nava",
@@ -1794,7 +1794,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-varzesh-tv-112",
   "name": "Varzesh TV",
   "persianName": "Varzesh TV",
@@ -1810,7 +1810,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-velayat-tv-113",
   "name": "Velayat TV",
   "persianName": "Velayat TV",
@@ -1826,7 +1826,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-wisehumantv-1080p-114",
   "name": "WiseHumanTv (1080p)",
   "persianName": "WiseHumanTv (1080p)",
@@ -1842,7 +1842,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-yazd-115",
   "name": "Yazd",
   "persianName": "Yazd",
@@ -1858,7 +1858,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "liv-zagros-116",
   "name": "Zagros",
   "persianName": "Zagros",
@@ -1874,7 +1874,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": true,
   "description": "شبکه زنده ایرانی — بدون فیلترشکن"
  },
- {
+{
   "id": "mov-00s-replay-117",
   "name": "00s Replay",
   "persianName": "00s Replay",
@@ -1890,7 +1890,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-4ever-cinema-1080p-118",
   "name": "4ever Cinema (1080p)",
   "persianName": "4ever Cinema (1080p)",
@@ -1906,7 +1906,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-24-hour-free-movies-720p-119",
   "name": "24 Hour Free Movies (720p)",
   "persianName": "24 Hour Free Movies (720p)",
@@ -1922,7 +1922,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-27-twentyseven-geo-blocked-120",
   "name": "27 TwentySeven [Geo-blocked]",
   "persianName": "27 TwentySeven [Geo-blocked]",
@@ -1938,7 +1938,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-30a-tv-classic-movies-720p-121",
   "name": "30A TV Classic Movies (720p)",
   "persianName": "30A TV Classic Movies (720p)",
@@ -1954,7 +1954,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-50-cent-action-720p-122",
   "name": "50 Cent Action (720p)",
   "persianName": "50 Cent Action (720p)",
@@ -1970,7 +1970,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-70s-cinema-123",
   "name": "70s Cinema",
   "persianName": "70s Cinema",
@@ -1986,7 +1986,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-80s-rewind-124",
   "name": "80s Rewind",
   "persianName": "80s Rewind",
@@ -2002,7 +2002,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-90s-throwback-125",
   "name": "90s Throwback",
   "persianName": "90s Throwback",
@@ -2018,7 +2018,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-312-406p-126",
   "name": "312 Кино (406p)",
   "persianName": "312 Кино (406p)",
@@ -2034,7 +2034,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-pictures-720p-127",
   "name": "&pictures (720p)",
   "persianName": "&pictures (720p)",
@@ -2050,7 +2050,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-tv-hd-1080p-128",
   "name": "&TV HD (1080p)",
   "persianName": "&TV HD (1080p)",
@@ -2066,7 +2066,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-xplor-hd-1080p-129",
   "name": "&xplor HD (1080p)",
   "persianName": "&xplor HD (1080p)",
@@ -2082,7 +2082,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-abn-bible-movies-720p-130",
   "name": "ABN Bible Movies (720p)",
   "persianName": "ABN Bible Movies (720p)",
@@ -2098,7 +2098,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-action-24-1080p-not-24-7-131",
   "name": "Action 24 (1080p) [Not 24/7]",
   "persianName": "Action 24 (1080p) [Not 24/7]",
@@ -2114,7 +2114,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-adrenalina-pura-tv-132",
   "name": "Adrenalina Pura TV",
   "persianName": "Adrenalina Pura TV",
@@ -2130,7 +2130,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-adrenalina-pura-tv-720p-133",
   "name": "Adrenalina Pura TV (720p)",
   "persianName": "Adrenalina Pura TV (720p)",
@@ -2146,7 +2146,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-afghan-nobel-movies-720p-134",
   "name": "Afghan Nobel Movies (720p)",
   "persianName": "Afghan Nobel Movies (720p)",
@@ -2162,7 +2162,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-aflam-1080p-135",
   "name": "Aflam (1080p)",
   "persianName": "Aflam (1080p)",
@@ -2178,7 +2178,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-alien-nation-by-dust-1080p-136",
   "name": "Alien Nation by DUST (1080p)",
   "persianName": "Alien Nation by DUST (1080p)",
@@ -2194,7 +2194,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-allo-cine-1080p-137",
   "name": "Allo Cine (1080p)",
   "persianName": "Allo Cine (1080p)",
@@ -2210,7 +2210,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-alpha-cinema-1080p-138",
   "name": "alpha Cinema (1080p)",
   "persianName": "alpha Cinema (1080p)",
@@ -2226,7 +2226,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-amc-east-720p-139",
   "name": "AMC East (720p)",
   "persianName": "AMC East (720p)",
@@ -2242,7 +2242,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--140",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AMC Europe",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AMC Europe",
@@ -2258,7 +2258,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--141",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AMC Europe Bulgary",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AMC Europe Bulgary",
@@ -2274,7 +2274,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--142",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AMC Europe Czech Republic",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AMC Europe Czech Republic",
@@ -2290,7 +2290,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-120-0-0-0--143",
   "name": "like Gecko) Chrome/120.0.0.0 Safari/537.36\" group-title=\"Movies\",AMC Europe Hungary",
   "persianName": "like Gecko) Chrome/120.0.0.0 Safari/537.36\" group-title=\"Movies\",AMC Europe Hungary",
@@ -2306,7 +2306,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-amc-latin-america-brazil-720-144",
   "name": "AMC Latin America Brazil (720p)",
   "persianName": "AMC Latin America Brazil (720p)",
@@ -2322,7 +2322,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-amedia-hit-1080p-145",
   "name": "Amedia Hit (1080p)",
   "persianName": "Amedia Hit (1080p)",
@@ -2338,7 +2338,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-american-horrors-480p-146",
   "name": "American Horrors (480p)",
   "persianName": "American Horrors (480p)",
@@ -2354,7 +2354,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--147",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.36\" group-title=\"Movies\",Armenia Premium (720p)",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.36\" group-title=\"Movies\",Armenia Premium (720p)",
@@ -2370,7 +2370,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-artflix-movie-classics-720p-148",
   "name": "Artflix Movie Classics (720p)",
   "persianName": "Artflix Movie Classics (720p)",
@@ -2386,7 +2386,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-asianet-movies-hd-720p-149",
   "name": "Asianet Movies HD (720p)",
   "persianName": "Asianet Movies HD (720p)",
@@ -2402,7 +2402,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-aurora-media-films-720p-150",
   "name": "Aurora Media Films (720p)",
   "persianName": "Aurora Media Films (720p)",
@@ -2418,7 +2418,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-avi-rewind-1080p-151",
   "name": "AVI Rewind (1080p)",
   "persianName": "AVI Rewind (1080p)",
@@ -2434,7 +2434,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-720p-152",
   "name": "AXN (720p)",
   "persianName": "AXN (720p)",
@@ -2450,7 +2450,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--153",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.36\" group-title=\"Movies\",AXN",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.36\" group-title=\"Movies\",AXN",
@@ -2466,7 +2466,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--154",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Adria",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Adria",
@@ -2482,7 +2482,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-asia-taiwan-1080p-155",
   "name": "AXN Asia Taiwan (1080p)",
   "persianName": "AXN Asia Taiwan (1080p)",
@@ -2498,7 +2498,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--156",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Black",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Black",
@@ -2514,7 +2514,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--157",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Black Czech Republic",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Black Czech Republic",
@@ -2530,7 +2530,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-black-poland-576p-158",
   "name": "AXN Black Poland (576p)",
   "persianName": "AXN Black Poland (576p)",
@@ -2546,7 +2546,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-120-0-0-0--159",
   "name": "like Gecko) Chrome/120.0.0.0 Safari/537.36\" group-title=\"Movies\",AXN CEE",
   "persianName": "like Gecko) Chrome/120.0.0.0 Safari/537.36\" group-title=\"Movies\",AXN CEE",
@@ -2562,7 +2562,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--160",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN CEE Czech Republic",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN CEE Czech Republic",
@@ -2578,7 +2578,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-130-0-0-0--161",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",AXN Crime",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",AXN Crime",
@@ -2594,7 +2594,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-latin-america-1080p-162",
   "name": "AXN Latin America (1080p)",
   "persianName": "AXN Latin America (1080p)",
@@ -2610,7 +2610,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-latin-america-1080p-163",
   "name": "AXN Latin America (1080p)",
   "persianName": "AXN Latin America (1080p)",
@@ -2626,7 +2626,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-latin-america-andes-1080-164",
   "name": "AXN Latin America Andes (1080p)",
   "persianName": "AXN Latin America Andes (1080p)",
@@ -2642,7 +2642,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-latin-america-chile-1080-165",
   "name": "AXN Latin America Chile (1080p)",
   "persianName": "AXN Latin America Chile (1080p)",
@@ -2658,7 +2658,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-axn-latin-america-south-166",
   "name": "AXN Latin America South",
   "persianName": "AXN Latin America South",
@@ -2674,7 +2674,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-149-0-0-0--167",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Movies (720p)",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"Movies\",AXN Movies (720p)",
@@ -2690,7 +2690,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-az-cinema-1080p-168",
   "name": "Az Cinema (1080p)",
   "persianName": "Az Cinema (1080p)",
@@ -2706,7 +2706,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-b4u-bhojpuri-1080p-169",
   "name": "B4U Bhojpuri (1080p)",
   "persianName": "B4U Bhojpuri (1080p)",
@@ -2722,7 +2722,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-b4u-kadak-576p-170",
   "name": "B4U Kadak (576p)",
   "persianName": "B4U Kadak (576p)",
@@ -2738,7 +2738,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-b4u-movies-576p-171",
   "name": "B4U Movies (576p)",
   "persianName": "B4U Movies (576p)",
@@ -2754,7 +2754,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-battlestar-galactica-172",
   "name": "Battlestar Galactica",
   "persianName": "Battlestar Galactica",
@@ -2770,7 +2770,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-130-0-0-0--173",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Box Office 1",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Box Office 1",
@@ -2786,7 +2786,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-130-0-0-0--174",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Box Office 2",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Box Office 2",
@@ -2802,7 +2802,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-130-0-0-0--175",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Box Office 3",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Box Office 3",
@@ -2818,7 +2818,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-130-0-0-0--176",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Movies Stars",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Movies Stars",
@@ -2834,7 +2834,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-like-gecko-chrome-130-0-0-0--177",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Movies Turk",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies\",beIN Movies Turk",
@@ -2850,7 +2850,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-bet-cinema-178",
   "name": "BET Cinema",
   "persianName": "BET Cinema",
@@ -2866,7 +2866,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-bet-comedy-movies-179",
   "name": "BET Comedy Movies",
   "persianName": "BET Comedy Movies",
@@ -2882,7 +2882,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-bet-visionaries-180",
   "name": "BET Visionaries",
   "persianName": "BET Visionaries",
@@ -2898,7 +2898,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-bhojpuri-cinema-720p-181",
   "name": "Bhojpuri Cinema (720p)",
   "persianName": "Bhojpuri Cinema (720p)",
@@ -2914,7 +2914,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "mov-biz-cinema-1080p-182",
   "name": "BIZ Cinema (1080p)",
   "persianName": "BIZ Cinema (1080p)",
@@ -2930,7 +2930,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم سینمایی — ویژه VIP"
  },
- {
+{
   "id": "ser-4ever-drama-1080p-183",
   "name": "4ever Drama (1080p)",
   "persianName": "4ever Drama (1080p)",
@@ -2946,7 +2946,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-5-cops-184",
   "name": "5 Cops",
   "persianName": "5 Cops",
@@ -2962,7 +2962,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-5-minut-tishiny-1080p-185",
   "name": "5 minut tishiny (1080p)",
   "persianName": "5 minut tishiny (1080p)",
@@ -2978,7 +2978,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-7th-heaven-186",
   "name": "7th Heaven",
   "persianName": "7th Heaven",
@@ -2994,7 +2994,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-7th-heaven-187",
   "name": "7th Heaven",
   "persianName": "7th Heaven",
@@ -3010,7 +3010,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-7th-heaven-188",
   "name": "7th Heaven",
   "persianName": "7th Heaven",
@@ -3026,7 +3026,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-13-teleseries-720p-189",
   "name": "13 Teleseries (720p)",
   "persianName": "13 Teleseries (720p)",
@@ -3042,7 +3042,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-48-hours-190",
   "name": "48 Hours",
   "persianName": "48 Hours",
@@ -3058,7 +3058,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-48-hours-1080p-191",
   "name": "48 Hours (1080p)",
   "persianName": "48 Hours (1080p)",
@@ -3074,7 +3074,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-2900-happiness-192",
   "name": "2900 Happiness",
   "persianName": "2900 Happiness",
@@ -3090,7 +3090,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-90210-193",
   "name": "90210",
   "persianName": "90210",
@@ -3106,7 +3106,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-sbt-novelas-1080p-geo-blocke-194",
   "name": "+SBT Novelas (1080p) [Geo-blocked]",
   "persianName": "+SBT Novelas (1080p) [Geo-blocked]",
@@ -3122,7 +3122,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-acapulco-shore-195",
   "name": "Acapulco Shore",
   "persianName": "Acapulco Shore",
@@ -3138,7 +3138,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-acapulco-shore-pluto-tv-196",
   "name": "Acapulco Shore Pluto TV",
   "persianName": "Acapulco Shore Pluto TV",
@@ -3154,7 +3154,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-afra-series-197",
   "name": "Afra Series",
   "persianName": "Afra Series",
@@ -3170,7 +3170,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-alerte-malibu-198",
   "name": "Alerte à Malibu",
   "persianName": "Alerte à Malibu",
@@ -3186,7 +3186,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-all-reality-we-tv-720p-199",
   "name": "All Reality WE tv (720p)",
   "persianName": "All Reality WE tv (720p)",
@@ -3202,7 +3202,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-all-weddings-we-tv-720p-geo--200",
   "name": "All Weddings We TV (720p) [Geo-blocked]",
   "persianName": "All Weddings We TV (720p) [Geo-blocked]",
@@ -3218,7 +3218,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-always-funny-videos-720p-201",
   "name": "Always Funny Videos (720p)",
   "persianName": "Always Funny Videos (720p)",
@@ -3234,7 +3234,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-amedia-2-576p-202",
   "name": "Amedia 2 (576p)",
   "persianName": "Amedia 2 (576p)",
@@ -3250,7 +3250,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-amedia-premium-720p-203",
   "name": "Amedia Premium (720p)",
   "persianName": "Amedia Premium (720p)",
@@ -3266,7 +3266,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-america-s-next-top-model-204",
   "name": "America's Next Top Model",
   "persianName": "America's Next Top Model",
@@ -3282,7 +3282,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-america-s-next-top-model-205",
   "name": "America's Next Top Model",
   "persianName": "America's Next Top Model",
@@ -3298,7 +3298,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-america-s-next-top-model-206",
   "name": "America's Next Top Model",
   "persianName": "America's Next Top Model",
@@ -3314,7 +3314,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-ana-y-los-7-207",
   "name": "Ana y los 7",
   "persianName": "Ana y los 7",
@@ -3330,7 +3330,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-andromeda-208",
   "name": "Andromeda",
   "persianName": "Andromeda",
@@ -3346,7 +3346,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-andromeda-209",
   "name": "Andromeda",
   "persianName": "Andromeda",
@@ -3362,7 +3362,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-andromeda-italy-720p-210",
   "name": "Andromeda Italy (720p)",
   "persianName": "Andromeda Italy (720p)",
@@ -3378,7 +3378,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-anger-management-channel-108-211",
   "name": "Anger Management Channel (1080p)",
   "persianName": "Anger Management Channel (1080p)",
@@ -3394,7 +3394,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-anthony-bourdain-parts-unkno-212",
   "name": "Anthony Bourdain: Parts Unknown",
   "persianName": "Anthony Bourdain: Parts Unknown",
@@ -3410,7 +3410,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-antiques-roadshow-pbs-1080p-213",
   "name": "Antiques Roadshow PBS (1080p)",
   "persianName": "Antiques Roadshow PBS (1080p)",
@@ -3426,7 +3426,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-antiques-roadshow-uk-1080p-214",
   "name": "Antiques Roadshow UK (1080p)",
   "persianName": "Antiques Roadshow UK (1080p)",
@@ -3442,7 +3442,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-are-we-there-yet-1080p-215",
   "name": "Are We There Yet? (1080p)",
   "persianName": "Are We There Yet? (1080p)",
@@ -3458,7 +3458,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-at-home-with-family-handyman-216",
   "name": "At Home with Family Handyman (720p)",
   "persianName": "At Home with Family Handyman (720p)",
@@ -3474,7 +3474,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-auction-hunters-217",
   "name": "Auction Hunters",
   "persianName": "Auction Hunters",
@@ -3490,7 +3490,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-auction-hunters-218",
   "name": "Auction Hunters",
   "persianName": "Auction Hunters",
@@ -3506,7 +3506,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-auction-hunters-219",
   "name": "Auction Hunters",
   "persianName": "Auction Hunters",
@@ -3522,7 +3522,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-avatar-220",
   "name": "Avatar",
   "persianName": "Avatar",
@@ -3538,7 +3538,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-avatar-221",
   "name": "Avatar",
   "persianName": "Avatar",
@@ -3554,7 +3554,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-awkward-222",
   "name": "Awkward",
   "persianName": "Awkward",
@@ -3570,7 +3570,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-awtv-1080p-geo-blocked-223",
   "name": "AWTV (1080p) [Geo-blocked]",
   "persianName": "AWTV (1080p) [Geo-blocked]",
@@ -3586,7 +3586,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-like-gecko-chrome-120-0-0-0--224",
   "name": "like Gecko) Chrome/120.0.0.0 Safari/537.36\" group-title=\"Series\",AXN Spin",
   "persianName": "like Gecko) Chrome/120.0.0.0 Safari/537.36\" group-title=\"Series\",AXN Spin",
@@ -3602,7 +3602,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bab-al-hara-1080p-225",
   "name": "Bab Al Hara (1080p)",
   "persianName": "Bab Al Hara (1080p)",
@@ -3618,7 +3618,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-balabol-1080p-226",
   "name": "Balabol (1080p)",
   "persianName": "Balabol (1080p)",
@@ -3634,7 +3634,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bar-rescue-227",
   "name": "Bar Rescue",
   "persianName": "Bar Rescue",
@@ -3650,7 +3650,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bar-rescue-228",
   "name": "Bar Rescue",
   "persianName": "Bar Rescue",
@@ -3666,7 +3666,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-baywatch-1080p-229",
   "name": "Baywatch (1080p)",
   "persianName": "Baywatch (1080p)",
@@ -3682,7 +3682,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bbc-doctor-who-classic-1080p-230",
   "name": "BBC Doctor Who Classic (1080p)",
   "persianName": "BBC Doctor Who Classic (1080p)",
@@ -3698,7 +3698,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bbc-drama-1080p-231",
   "name": "BBC Drama (1080p)",
   "persianName": "BBC Drama (1080p)",
@@ -3714,7 +3714,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-becker-232",
   "name": "Becker",
   "persianName": "Becker",
@@ -3730,7 +3730,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-becker-233",
   "name": "Becker",
   "persianName": "Becker",
@@ -3746,7 +3746,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-becker-234",
   "name": "Becker",
   "persianName": "Becker",
@@ -3762,7 +3762,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bet-235",
   "name": "BET",
   "persianName": "BET",
@@ -3778,7 +3778,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bet-236",
   "name": "BET",
   "persianName": "BET",
@@ -3794,7 +3794,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bet-237",
   "name": "BET",
   "persianName": "BET",
@@ -3810,7 +3810,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-beverly-hills-90210-238",
   "name": "Beverly Hills 90210",
   "persianName": "Beverly Hills 90210",
@@ -3826,7 +3826,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-beverly-hills-90210-239",
   "name": "Beverly Hills 90210",
   "persianName": "Beverly Hills 90210",
@@ -3842,7 +3842,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-black-ink-crew-240",
   "name": "Black Ink Crew",
   "persianName": "Black Ink Crew",
@@ -3858,7 +3858,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-blue-bloods-241",
   "name": "Blue Bloods",
   "persianName": "Blue Bloods",
@@ -3874,7 +3874,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-blue-bloods-242",
   "name": "Blue Bloods",
   "persianName": "Blue Bloods",
@@ -3890,7 +3890,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bolt-576p-243",
   "name": "Bolt (576p)",
   "persianName": "Bolt (576p)",
@@ -3906,7 +3906,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-like-gecko-chrome-130-0-0-0--244",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies;Series\",Bolt (1080p)",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Movies;Series\",Bolt (1080p)",
@@ -3922,7 +3922,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bonanza-245",
   "name": "Bonanza",
   "persianName": "Bonanza",
@@ -3938,7 +3938,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bonanza-246",
   "name": "Bonanza",
   "persianName": "Bonanza",
@@ -3954,7 +3954,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bondi-rescue-720p-247",
   "name": "Bondi Rescue (720p)",
   "persianName": "Bondi Rescue (720p)",
@@ -3970,7 +3970,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bondi-rescue-720p-248",
   "name": "Bondi Rescue (720p)",
   "persianName": "Bondi Rescue (720p)",
@@ -3986,7 +3986,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bondi-rescue-720p-249",
   "name": "Bondi Rescue (720p)",
   "persianName": "Bondi Rescue (720p)",
@@ -4002,7 +4002,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-britain-s-next-top-model-250",
   "name": "Britain's Next Top Model",
   "persianName": "Britain's Next Top Model",
@@ -4018,7 +4018,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-britain-s-next-top-model-251",
   "name": "Britain's Next Top Model",
   "persianName": "Britain's Next Top Model",
@@ -4034,7 +4034,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-britain-s-next-top-model-252",
   "name": "Britain's Next Top Model",
   "persianName": "Britain's Next Top Model",
@@ -4050,7 +4050,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bull-253",
   "name": "Bull",
   "persianName": "Bull",
@@ -4066,7 +4066,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bull-254",
   "name": "Bull",
   "persianName": "Bull",
@@ -4082,7 +4082,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "ser-bull-255",
   "name": "Bull",
   "persianName": "Bull",
@@ -4098,7 +4098,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "سریال — ویژه VIP"
  },
- {
+{
   "id": "car-3abn-kids-network-256",
   "name": "3ABN Kids Network",
   "persianName": "3ABN Kids Network",
@@ -4114,7 +4114,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-4-fun-kids-576i-not-24-7-257",
   "name": "4 Fun Kids (576i) [[Not 24/7]]",
   "persianName": "4 Fun Kids (576i) [[Not 24/7]]",
@@ -4130,7 +4130,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-13-kids-1080p-258",
   "name": "13 Kids (1080p)",
   "persianName": "13 Kids (1080p)",
@@ -4146,7 +4146,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-90-s-kids-259",
   "name": "90's Kids",
   "persianName": "90's Kids",
@@ -4162,7 +4162,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-90s-kids-tv-2-260",
   "name": "90s Kids TV 2",
   "persianName": "90s Kids TV 2",
@@ -4178,7 +4178,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-abc-entertains-720p-261",
   "name": "ABC Entertains (720p)",
   "persianName": "ABC Entertains (720p)",
@@ -4194,7 +4194,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-abc-kids-262",
   "name": "ABC Kids",
   "persianName": "ABC Kids",
@@ -4210,7 +4210,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-ado-tv-720p-263",
   "name": "ADO TV (720p)",
   "persianName": "ADO TV (720p)",
@@ -4226,7 +4226,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-afarin-baxcha-1080p-264",
   "name": "Afarin Baxcha (1080p)",
   "persianName": "Afarin Baxcha (1080p)",
@@ -4242,7 +4242,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-afarin-tv-720p-not-24-7-265",
   "name": "Afarin TV (720p) [Not 24/7]",
   "persianName": "Afarin TV (720p) [Not 24/7]",
@@ -4258,7 +4258,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-akili-kids-266",
   "name": "Akili Kids!",
   "persianName": "Akili Kids!",
@@ -4274,7 +4274,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-amou-yazid-tv-576p-267",
   "name": "Amou Yazid TV (576p)",
   "persianName": "Amou Yazid TV (576p)",
@@ -4290,7 +4290,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-ani-576p-268",
   "name": "Ani (576p)",
   "persianName": "Ani (576p)",
@@ -4306,7 +4306,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-aqlvoy-269",
   "name": "Aqlvoy",
   "persianName": "Aqlvoy",
@@ -4322,7 +4322,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-atfal-mawaheb-tv-1080p-270",
   "name": "Atfal & Mawaheb TV (1080p)",
   "persianName": "Atfal & Mawaheb TV (1080p)",
@@ -4338,7 +4338,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-avatar-a-lenda-de-aang-271",
   "name": "Avatar: A lenda de Aang",
   "persianName": "Avatar: A lenda de Aang",
@@ -4354,7 +4354,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-avatar-la-leyenda-de-aang-272",
   "name": "Avatar: La Leyenda de Aang",
   "persianName": "Avatar: La Leyenda de Aang",
@@ -4370,7 +4370,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-baby-shark-tv-273",
   "name": "Baby Shark TV",
   "persianName": "Baby Shark TV",
@@ -4386,7 +4386,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-baby-shark-tv-1080p-274",
   "name": "Baby Shark TV (1080p)",
   "persianName": "Baby Shark TV (1080p)",
@@ -4402,7 +4402,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-baby-time-576p-275",
   "name": "Baby Time (576p)",
   "persianName": "Baby Time (576p)",
@@ -4418,7 +4418,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-babyfirst-276",
   "name": "Babyfirst",
   "persianName": "Babyfirst",
@@ -4434,7 +4434,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-babyfirst-720p-277",
   "name": "BabyFirst (720p)",
   "persianName": "BabyFirst (720p)",
@@ -4450,7 +4450,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-babyfirst-spanish-720p-278",
   "name": "BabyFirst Spanish (720p)",
   "persianName": "BabyFirst Spanish (720p)",
@@ -4466,7 +4466,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-babytv-latin-america-1080p-279",
   "name": "BabyTV Latin America (1080p)",
   "persianName": "BabyTV Latin America (1080p)",
@@ -4482,7 +4482,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-balapan-576p-280",
   "name": "Balapan (576p)",
   "persianName": "Balapan (576p)",
@@ -4498,7 +4498,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-balapan-hd-1080p-281",
   "name": "Balapan HD (1080p)",
   "persianName": "Balapan HD (1080p)",
@@ -4514,7 +4514,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-banijay-mr-bean-anim-1080p-282",
   "name": "Banijay Mr Bean Animé (1080p)",
   "persianName": "Banijay Mr Bean Animé (1080p)",
@@ -4530,7 +4530,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bbc-four-cbeebies-720p-283",
   "name": "BBC Four/CBeebies (720p)",
   "persianName": "BBC Four/CBeebies (720p)",
@@ -4546,7 +4546,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bbc-kids-720p-284",
   "name": "BBC Kids (720p)",
   "persianName": "BBC Kids (720p)",
@@ -4562,7 +4562,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bbc-three-cbbc-720p-285",
   "name": "BBC Three/CBBC (720p)",
   "persianName": "BBC Three/CBBC (720p)",
@@ -4578,7 +4578,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bejoy-kids-1080p-286",
   "name": "BeJoy.kids (1080p)",
   "persianName": "BeJoy.kids (1080p)",
@@ -4594,7 +4594,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-biznet-kids-1080p-287",
   "name": "Biznet Kids (1080p)",
   "persianName": "Biznet Kids (1080p)",
@@ -4610,7 +4610,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bob-esponja-720p-288",
   "name": "Bob Esponja (720p)",
   "persianName": "Bob Esponja (720p)",
@@ -4626,7 +4626,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bob-esponja-cal-a-quadrada-7-289",
   "name": "Bob Esponja Calça Quadrada (720p)",
   "persianName": "Bob Esponja Calça Quadrada (720p)",
@@ -4642,7 +4642,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bob-esponja-pantalones-cuadr-290",
   "name": "Bob Esponja Pantalones Cuadrados (720p)",
   "persianName": "Bob Esponja Pantalones Cuadrados (720p)",
@@ -4658,7 +4658,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bob-l-ponge-720p-291",
   "name": "Bob l'éponge (720p)",
   "persianName": "Bob l'éponge (720p)",
@@ -4674,7 +4674,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bob-l-ponge-720p-292",
   "name": "Bob l'éponge (720p)",
   "persianName": "Bob l'éponge (720p)",
@@ -4690,7 +4690,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bolajon-576p-293",
   "name": "Bolajon (576p)",
   "persianName": "Bolajon (576p)",
@@ -4706,7 +4706,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-box-kids-tv-720p-294",
   "name": "Box Kids TV (720p)",
   "persianName": "Box Kids TV (720p)",
@@ -4722,7 +4722,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-brat-tv-1080p-295",
   "name": "Brat TV (1080p)",
   "persianName": "Brat TV (1080p)",
@@ -4738,7 +4738,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-bravo-kids-tv-296",
   "name": "Bravo! Kids TV",
   "persianName": "Bravo! Kids TV",
@@ -4754,7 +4754,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-brtv-kaku-childrens-channel-297",
   "name": "BRTV Kaku Childrens Channel",
   "persianName": "BRTV Kaku Childrens Channel",
@@ -4770,7 +4770,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-camp-spoopy-576p-298",
   "name": "Camp Spoopy (576p)",
   "persianName": "Camp Spoopy (576p)",
@@ -4786,7 +4786,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-carousel-720p-299",
   "name": "Carousel (720p)",
   "persianName": "Carousel (720p)",
@@ -4802,7 +4802,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-carousel-1080p-300",
   "name": "Carousel (1080p)",
   "persianName": "Carousel (1080p)",
@@ -4818,7 +4818,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-carousel-international-576p-301",
   "name": "Carousel International (576p)",
   "persianName": "Carousel International (576p)",
@@ -4834,7 +4834,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-cartoon-classics-576p-302",
   "name": "Cartoon Classics (576p)",
   "persianName": "Cartoon Classics (576p)",
@@ -4850,7 +4850,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-cbeebies-asia-576p-303",
   "name": "CBeebies Asia (576p)",
   "persianName": "CBeebies Asia (576p)",
@@ -4866,7 +4866,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-cctv-14-1080p-304",
   "name": "CCTV-14 (1080p)",
   "persianName": "CCTV-14 (1080p)",
@@ -4882,7 +4882,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-chikitoonz-1080p-305",
   "name": "Chikitoonz (1080p)",
   "persianName": "Chikitoonz (1080p)",
@@ -4898,7 +4898,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-chinola-tv-480p-306",
   "name": "Chinola TV (480p)",
   "persianName": "Chinola TV (480p)",
@@ -4914,7 +4914,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-christian-youth-channel-cyc--307",
   "name": "Christian Youth Channel (CYC) (1080p)",
   "persianName": "Christian Youth Channel (CYC) (1080p)",
@@ -4930,7 +4930,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-like-gecko-chrome-152-0-0-0--308",
   "name": "like Gecko) Chrome/152.0.0.0 Safari/537.36\" group-title=\"Kids\",Cine+ Kids",
   "persianName": "like Gecko) Chrome/152.0.0.0 Safari/537.36\" group-title=\"Kids\",Cine+ Kids",
@@ -4946,7 +4946,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-clan-1080p-309",
   "name": "Clan (1080p)",
   "persianName": "Clan (1080p)",
@@ -4962,7 +4962,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-t-d-t-art-1080p-310",
   "name": "ČT:D/ČT art (1080p)",
   "persianName": "ČT:D/ČT art (1080p)",
@@ -4978,7 +4978,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-detective-conan-311",
   "name": "Detective Conan",
   "persianName": "Detective Conan",
@@ -4994,7 +4994,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-detective-conan-france-720p-312",
   "name": "Detective Conan France (720p)",
   "persianName": "Detective Conan France (720p)",
@@ -5010,7 +5010,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-dios-te-ve-kids-720p-313",
   "name": "Dios Te Ve Kids (720p)",
   "persianName": "Dios Te Ve Kids (720p)",
@@ -5026,7 +5026,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-314",
   "name": "Disney Channel",
   "persianName": "Disney Channel",
@@ -5042,7 +5042,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-like-gecko-chrome-130-0-0-0--315",
   "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Kids\",Disney Channel",
   "persianName": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Kids\",Disney Channel",
@@ -5058,7 +5058,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-576p-316",
   "name": "Disney Channel (576p)",
   "persianName": "Disney Channel (576p)",
@@ -5074,7 +5074,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-1080p-317",
   "name": "Disney Channel (1080p)",
   "persianName": "Disney Channel (1080p)",
@@ -5090,7 +5090,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-720p-geo-bloc-318",
   "name": "Disney Channel (720p) [Geo-blocked]",
   "persianName": "Disney Channel (720p) [Geo-blocked]",
@@ -5106,7 +5106,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-hd-1080p-319",
   "name": "Disney Channel HD (1080p)",
   "persianName": "Disney Channel HD (1080p)",
@@ -5122,7 +5122,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-latin-america-320",
   "name": "Disney Channel Latin America (1080p)",
   "persianName": "Disney Channel Latin America (1080p)",
@@ -5138,7 +5138,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-latin-america-321",
   "name": "Disney Channel Latin America Center (1080p)",
   "persianName": "Disney Channel Latin America Center (1080p)",
@@ -5154,7 +5154,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-animation-1080p-geo-blocked-322",
   "name": "Animation+ (1080p) [Geo-blocked]",
   "persianName": "Animation+ (1080p) [Geo-blocked]",
@@ -5170,7 +5170,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-animax-asia-india-1080p-geo--323",
   "name": "Animax Asia India (1080p) [Geo-blocked]",
   "persianName": "Animax Asia India (1080p) [Geo-blocked]",
@@ -5186,7 +5186,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-anime-vision-1080p-324",
   "name": "Anime Vision (1080p)",
   "persianName": "Anime Vision (1080p)",
@@ -5202,7 +5202,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-anime-vision-classics-1080p-325",
   "name": "Anime Vision Classics (1080p)",
   "persianName": "Anime Vision Classics (1080p)",
@@ -5218,7 +5218,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-anime-x-hidive-720p-geo-bloc-326",
   "name": "ANIME x HIDIVE (720p) [Geo-blocked]",
   "persianName": "ANIME x HIDIVE (720p) [Geo-blocked]",
@@ -5234,7 +5234,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-aniplus-asia-720p-327",
   "name": "Aniplus Asia (720p)",
   "persianName": "Aniplus Asia (720p)",
@@ -5250,7 +5250,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-comedy-central-south-park-328",
   "name": "Comedy Central South Park",
   "persianName": "Comedy Central South Park",
@@ -5266,7 +5266,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-comedy-central-south-park-329",
   "name": "Comedy Central South Park",
   "persianName": "Comedy Central South Park",
@@ -5282,7 +5282,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-comedy-central-south-park-330",
   "name": "Comedy Central South Park",
   "persianName": "Comedy Central South Park",
@@ -5298,7 +5298,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-crunchyroll-720p-331",
   "name": "Crunchyroll (720p)",
   "persianName": "Crunchyroll (720p)",
@@ -5314,7 +5314,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-daria-332",
   "name": "Daria",
   "persianName": "Daria",
@@ -5330,7 +5330,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-latin-america-333",
   "name": "Disney Channel Latin America Mexico (720p)",
   "persianName": "Disney Channel Latin America Mexico (720p)",
@@ -5346,7 +5346,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-latin-america-334",
   "name": "Disney Channel Latin America North (576p)",
   "persianName": "Disney Channel Latin America North (576p)",
@@ -5362,7 +5362,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-channel-latin-america-335",
   "name": "Disney Channel Latin America Panregional HD (1080p)",
   "persianName": "Disney Channel Latin America Panregional HD (1080p)",
@@ -5378,7 +5378,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-jr-latin-america-1080-336",
   "name": "Disney Jr. Latin America (1080p)",
   "persianName": "Disney Jr. Latin America (1080p)",
@@ -5394,7 +5394,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-jr-latin-america-576p-337",
   "name": "Disney Jr. Latin America (576p)",
   "persianName": "Disney Jr. Latin America (576p)",
@@ -5410,7 +5410,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-jr-latin-america-nort-338",
   "name": "Disney Jr. Latin America North HD (1080p)",
   "persianName": "Disney Jr. Latin America North HD (1080p)",
@@ -5426,7 +5426,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-jr-latin-america-sout-339",
   "name": "Disney Jr. Latin America South (1080p)",
   "persianName": "Disney Jr. Latin America South (1080p)",
@@ -5442,7 +5442,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-disney-jr-latin-america-sout-340",
   "name": "Disney Jr. Latin America South HD (1080p)",
   "persianName": "Disney Jr. Latin America South HD (1080p)",
@@ -5458,7 +5458,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-dreamworks-channel-asia-1080-341",
   "name": "DreamWorks Channel Asia (1080p)",
   "persianName": "DreamWorks Channel Asia (1080p)",
@@ -5474,7 +5474,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-dreamworks-channel-latin-ame-342",
   "name": "DreamWorks Channel Latin America (1080p)",
   "persianName": "DreamWorks Channel Latin America (1080p)",
@@ -5490,7 +5490,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-dreiko-tv-720p-not-24-7-343",
   "name": "Dreiko TV (720p) [Not 24/7]",
   "persianName": "Dreiko TV (720p) [Not 24/7]",
@@ -5506,7 +5506,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-energeek-720p-not-24-7-344",
   "name": "EnerGeek (720p) [Not 24/7]",
   "persianName": "EnerGeek (720p) [Not 24/7]",
@@ -5522,7 +5522,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-energeek-fan-1080p-345",
   "name": "EnerGeek Fan (1080p)",
   "persianName": "EnerGeek Fan (1080p)",
@@ -5538,7 +5538,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-esports-max-tv-346",
   "name": "eSports Max TV",
   "persianName": "eSports Max TV",
@@ -5554,7 +5554,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-etc-tv-1080p-347",
   "name": "ETC TV (1080p)",
   "persianName": "ETC TV (1080p)",
@@ -5570,7 +5570,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-extrema-kids-tv-not-24-7-348",
   "name": "Extrema Kids TV [Not 24/7]",
   "persianName": "Extrema Kids TV [Not 24/7]",
@@ -5586,7 +5586,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-fan-1080p-349",
   "name": "FAN (1080p)",
   "persianName": "FAN (1080p)",
@@ -5602,7 +5602,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-filmrise-anime-720p-350",
   "name": "FilmRise Anime (720p)",
   "persianName": "FilmRise Anime (720p)",
@@ -5618,7 +5618,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-geekdot-720p-351",
   "name": "Geekdot (720p)",
   "persianName": "Geekdot (720p)",
@@ -5634,7 +5634,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-giktvmx-720p-352",
   "name": "GikTVMX (720p)",
   "persianName": "GikTVMX (720p)",
@@ -5650,7 +5650,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-gong-1080p-353",
   "name": "Gong (1080p)",
   "persianName": "Gong (1080p)",
@@ -5666,7 +5666,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-hasbro-legends-1080p-geo-blo-354",
   "name": "Hasbro Legends (1080p) [Geo-blocked]",
   "persianName": "Hasbro Legends (1080p) [Geo-blocked]",
@@ -5682,7 +5682,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-japanim-tv-1080p-355",
   "name": "Japanim TV (1080p)",
   "persianName": "Japanim TV (1080p)",
@@ -5698,7 +5698,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-kidoo-1080p-geo-blocked-356",
   "name": "KidOO (1080p) [Geo-blocked]",
   "persianName": "KidOO (1080p) [Geo-blocked]",
@@ -5714,7 +5714,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-kuriakos-kids-1080p-357",
   "name": "Kuriakos Kids (1080p)",
   "persianName": "Kuriakos Kids (1080p)",
@@ -5730,7 +5730,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-lamil35-tv-358",
   "name": "LAMIL35 TV",
   "persianName": "LAMIL35 TV",
@@ -5746,7 +5746,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-las-tortugas-ninja-720p-359",
   "name": "Las Tortugas Ninja (720p)",
   "persianName": "Las Tortugas Ninja (720p)",
@@ -5762,7 +5762,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-max-anime-1080p-360",
   "name": "MAX Anime (1080p)",
   "persianName": "MAX Anime (1080p)",
@@ -5778,7 +5778,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-mcn6-music-channel-1080p-not-361",
   "name": "MCN6 Music Channel (1080p) [Not 24/7]",
   "persianName": "MCN6 Music Channel (1080p) [Not 24/7]",
@@ -5794,7 +5794,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-mr-bean-animated-1080p-362",
   "name": "Mr. Bean Animated (1080p)",
   "persianName": "Mr. Bean Animated (1080p)",
@@ -5810,7 +5810,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-mr-bean-anime-italy-1080p-363",
   "name": "Mr. Bean Anime Italy (1080p)",
   "persianName": "Mr. Bean Anime Italy (1080p)",
@@ -5826,7 +5826,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-mr-bean-anime-spain-1080p-364",
   "name": "Mr. Bean Anime Spain (1080p)",
   "persianName": "Mr. Bean Anime Spain (1080p)",
@@ -5842,7 +5842,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-naruto-365",
   "name": "Naruto",
   "persianName": "Naruto",
@@ -5858,7 +5858,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-naruto-720p-366",
   "name": "Naruto (720p)",
   "persianName": "Naruto (720p)",
@@ -5874,7 +5874,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-naruto-1080p-367",
   "name": "Naruto (1080p)",
   "persianName": "Naruto (1080p)",
@@ -5890,7 +5890,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-naruto-368",
   "name": "Naruto",
   "persianName": "Naruto",
@@ -5906,7 +5906,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-naruto-shippuden-369",
   "name": "Naruto Shippuden",
   "persianName": "Naruto Shippuden",
@@ -5922,7 +5922,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-nickelodeon-pluto-tv-720p-370",
   "name": "Nickelodeon Pluto TV (720p)",
   "persianName": "Nickelodeon Pluto TV (720p)",
@@ -5938,7 +5938,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-nickonline-bob-esponja-720p--371",
   "name": "NickOnline Bob Esponja (720p) [Not 24/7]",
   "persianName": "NickOnline Bob Esponja (720p) [Not 24/7]",
@@ -5954,7 +5954,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-nickonline-hd-720p-372",
   "name": "NickOnline HD (720p)",
   "persianName": "NickOnline HD (720p)",
@@ -5970,7 +5970,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-like-gecko-chrome-149-0-0-0--373",
   "name": "like Gecko) Chrome/149.0.0.0 Safari/537.36\" group-title=\"Animation;Kids\",NickToons Brasil (480p)",
   "persianName": "like Gecko) Chrome/149.0.0.0 Safari/537.36\" group-title=\"Animation;Kids\",NickToons Brasil (480p)",
@@ -5986,7 +5986,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-one-piece-374",
   "name": "One Piece",
   "persianName": "One Piece",
@@ -6002,7 +6002,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-one-piece-375",
   "name": "One Piece",
   "persianName": "One Piece",
@@ -6018,7 +6018,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-one-piece-376",
   "name": "One Piece",
   "persianName": "One Piece",
@@ -6034,7 +6034,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-one-piece-377",
   "name": "One Piece",
   "persianName": "One Piece",
@@ -6050,7 +6050,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-one-piece-378",
   "name": "One Piece",
   "persianName": "One Piece",
@@ -6066,7 +6066,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-one-piece-379",
   "name": "One Piece",
   "persianName": "One Piece",
@@ -6082,7 +6082,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-pixel-tv-720p-380",
   "name": "Pixel.tv (720p)",
   "persianName": "Pixel.tv (720p)",
@@ -6098,7 +6098,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-placid-1080p-not-24-7-381",
   "name": "Placid (1080p) [Not 24/7]",
   "persianName": "Placid (1080p) [Not 24/7]",
@@ -6114,7 +6114,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-pluto-tv-adult-animation-382",
   "name": "Pluto TV Adult Animation",
   "persianName": "Pluto TV Adult Animation",
@@ -6130,7 +6130,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-pluto-tv-animation-383",
   "name": "Pluto TV Animation",
   "persianName": "Pluto TV Animation",
@@ -6146,7 +6146,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-pluto-tv-anime-384",
   "name": "Pluto TV Anime",
   "persianName": "Pluto TV Anime",
@@ -6162,7 +6162,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-pluto-tv-anime-385",
   "name": "Pluto TV Anime",
   "persianName": "Pluto TV Anime",
@@ -6178,7 +6178,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-pluto-tv-anime-386",
   "name": "Pluto TV Anime",
   "persianName": "Pluto TV Anime",
@@ -6194,7 +6194,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "car-pluto-tv-anime-387",
   "name": "Pluto TV Anime",
   "persianName": "Pluto TV Anime",
@@ -6210,7 +6210,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "کارتون — ویژه VIP"
  },
- {
+{
   "id": "adu-adultiptv-net-live-cams-388",
   "name": "AdultIPTV.net Live Cams",
   "persianName": "AdultIPTV.net Live Cams",
@@ -6226,7 +6226,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-milf-389",
   "name": "AdultIPTV.net MILF",
   "persianName": "AdultIPTV.net MILF",
@@ -6242,7 +6242,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-big-dick-390",
   "name": "AdultIPTV.net Big Dick",
   "persianName": "AdultIPTV.net Big Dick",
@@ -6258,7 +6258,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-big-tits-391",
   "name": "AdultIPTV.net Big Tits",
   "persianName": "AdultIPTV.net Big Tits",
@@ -6274,7 +6274,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-fetish-392",
   "name": "AdultIPTV.net Fetish",
   "persianName": "AdultIPTV.net Fetish",
@@ -6290,7 +6290,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-pornstar-393",
   "name": "AdultIPTV.net Pornstar",
   "persianName": "AdultIPTV.net Pornstar",
@@ -6306,7 +6306,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-big-ass-394",
   "name": "AdultIPTV.net Big Ass",
   "persianName": "AdultIPTV.net Big Ass",
@@ -6322,7 +6322,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-interracial-395",
   "name": "AdultIPTV.net Interracial",
   "persianName": "AdultIPTV.net Interracial",
@@ -6338,7 +6338,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-latina-396",
   "name": "AdultIPTV.net Latina",
   "persianName": "AdultIPTV.net Latina",
@@ -6354,7 +6354,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-pov-397",
   "name": "AdultIPTV.net POV",
   "persianName": "AdultIPTV.net POV",
@@ -6370,7 +6370,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-blowjob-398",
   "name": "AdultIPTV.net Blowjob",
   "persianName": "AdultIPTV.net Blowjob",
@@ -6386,7 +6386,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-teen-399",
   "name": "AdultIPTV.net Teen",
   "persianName": "AdultIPTV.net Teen",
@@ -6402,7 +6402,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-hardcore-400",
   "name": "AdultIPTV.net Hardcore",
   "persianName": "AdultIPTV.net Hardcore",
@@ -6418,7 +6418,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-cuckold-401",
   "name": "AdultIPTV.net Cuckold",
   "persianName": "AdultIPTV.net Cuckold",
@@ -6434,7 +6434,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-threesome-402",
   "name": "AdultIPTV.net Threesome",
   "persianName": "AdultIPTV.net Threesome",
@@ -6450,7 +6450,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-russian-403",
   "name": "AdultIPTV.net Russian",
   "persianName": "AdultIPTV.net Russian",
@@ -6466,7 +6466,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-lesbian-404",
   "name": "AdultIPTV.net Lesbian",
   "persianName": "AdultIPTV.net Lesbian",
@@ -6482,7 +6482,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-rough-405",
   "name": "AdultIPTV.net Rough",
   "persianName": "AdultIPTV.net Rough",
@@ -6498,7 +6498,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-gangbang-406",
   "name": "AdultIPTV.net Gangbang",
   "persianName": "AdultIPTV.net Gangbang",
@@ -6514,7 +6514,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-anal-407",
   "name": "AdultIPTV.net Anal",
   "persianName": "AdultIPTV.net Anal",
@@ -6530,7 +6530,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-compilation-408",
   "name": "AdultIPTV.net Compilation",
   "persianName": "AdultIPTV.net Compilation",
@@ -6546,7 +6546,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-brunette-409",
   "name": "AdultIPTV.net Brunette",
   "persianName": "AdultIPTV.net Brunette",
@@ -6562,7 +6562,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-blonde-410",
   "name": "AdultIPTV.net Blonde",
   "persianName": "AdultIPTV.net Blonde",
@@ -6578,7 +6578,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-gay-411",
   "name": "AdultIPTV.net Gay",
   "persianName": "AdultIPTV.net Gay",
@@ -6594,7 +6594,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-adultiptv-net-asian-412",
   "name": "AdultIPTV.net Asian",
   "persianName": "AdultIPTV.net Asian",
@@ -6610,7 +6610,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-playboyx-tv-413",
   "name": "PlayboyX Tv",
   "persianName": "PlayboyX Tv",
@@ -6626,7 +6626,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-hot-414",
   "name": "HOT",
   "persianName": "HOT",
@@ -6642,7 +6642,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-dusk-415",
   "name": "Dusk",
   "persianName": "Dusk",
@@ -6658,7 +6658,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-juice-416",
   "name": "Juice",
   "persianName": "Juice",
@@ -6674,7 +6674,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-sextation-417",
   "name": "SEXTATION",
   "persianName": "SEXTATION",
@@ -6690,7 +6690,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-you-porn-418",
   "name": "You Porn",
   "persianName": "You Porn",
@@ -6706,7 +6706,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-penthousex-419",
   "name": "PenthouseX",
   "persianName": "PenthouseX",
@@ -6722,7 +6722,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-sextreme-420",
   "name": "Sextreme",
   "persianName": "Sextreme",
@@ -6738,7 +6738,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-brazzers-421",
   "name": "BRAZZERS",
   "persianName": "BRAZZERS",
@@ -6754,7 +6754,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-hustlerxxx-422",
   "name": "HustlerXXX",
   "persianName": "HustlerXXX",
@@ -6770,7 +6770,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-privatex-423",
   "name": "PrivateX",
   "persianName": "PrivateX",
@@ -6786,7 +6786,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-redlightx-424",
   "name": "RedlightX",
   "persianName": "RedlightX",
@@ -6802,7 +6802,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-venus-425",
   "name": "VENUS",
   "persianName": "VENUS",
@@ -6818,7 +6818,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-russian-us-426",
   "name": "Russian  | US",
   "persianName": "Russian  | US",
@@ -6834,7 +6834,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-pornstar-us-427",
   "name": "Pornstar  | US",
   "persianName": "Pornstar  | US",
@@ -6850,7 +6850,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-milf-us-428",
   "name": "MILF  | US",
   "persianName": "MILF  | US",
@@ -6866,7 +6866,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-hardcore-us-429",
   "name": "Hardcore  | US",
   "persianName": "Hardcore  | US",
@@ -6882,7 +6882,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-fetish-us-430",
   "name": "Fetish  | US",
   "persianName": "Fetish  | US",
@@ -6898,7 +6898,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-compilation-us-431",
   "name": "Compilation  | US",
   "persianName": "Compilation  | US",
@@ -6914,7 +6914,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-big-tits-us-432",
   "name": "Big Tits  | US",
   "persianName": "Big Tits  | US",
@@ -6930,7 +6930,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-big-dick-us-433",
   "name": "Big Dick  | US",
   "persianName": "Big Dick  | US",
@@ -6946,7 +6946,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-big-ass-us-434",
   "name": "Big Ass  | US",
   "persianName": "Big Ass  | US",
@@ -6962,7 +6962,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-anal-us-435",
   "name": "Anal  | US",
   "persianName": "Anal  | US",
@@ -6978,7 +6978,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-teen-us-436",
   "name": "Teen  | US",
   "persianName": "Teen  | US",
@@ -6994,7 +6994,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-latina-us-437",
   "name": "Latina  | US",
   "persianName": "Latina  | US",
@@ -7010,7 +7010,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-blonde-us-438",
   "name": "Blonde  | US",
   "persianName": "Blonde  | US",
@@ -7026,7 +7026,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-brunette-us-439",
   "name": "Brunette  | US",
   "persianName": "Brunette  | US",
@@ -7042,7 +7042,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-interracial-us-440",
   "name": "Interracial  | US",
   "persianName": "Interracial  | US",
@@ -7058,7 +7058,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-pov-us-441",
   "name": "POV  | US",
   "persianName": "POV  | US",
@@ -7074,7 +7074,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-blowjob-us-442",
   "name": "Blowjob  | US",
   "persianName": "Blowjob  | US",
@@ -7090,7 +7090,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-threesome-us-443",
   "name": "Threesome  | US",
   "persianName": "Threesome  | US",
@@ -7106,7 +7106,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-rough-us-444",
   "name": "Rough  | US",
   "persianName": "Rough  | US",
@@ -7122,7 +7122,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-gangbang-us-445",
   "name": "Gangbang  | US",
   "persianName": "Gangbang  | US",
@@ -7138,7 +7138,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-live-cams-us-446",
   "name": "Live Cams  | US",
   "persianName": "Live Cams  | US",
@@ -7154,7 +7154,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-cuckold-us-447",
   "name": "Cuckold  | US",
   "persianName": "Cuckold  | US",
@@ -7170,7 +7170,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-lesbian-us-448",
   "name": "Lesbian  | US",
   "persianName": "Lesbian  | US",
@@ -7186,7 +7186,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-gay-us-449",
   "name": "Gay  | US",
   "persianName": "Gay  | US",
@@ -7202,7 +7202,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-redtraffic-hardcore-450",
   "name": "RedTraffic Hardcore",
   "persianName": "RedTraffic Hardcore",
@@ -7218,7 +7218,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-redtraffic-lesbian-451",
   "name": "RedTraffic Lesbian",
   "persianName": "RedTraffic Lesbian",
@@ -7234,7 +7234,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-redtraffic-threesome-452",
   "name": "RedTraffic Threesome",
   "persianName": "RedTraffic Threesome",
@@ -7250,7 +7250,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-rough-453",
   "name": "Rough",
   "persianName": "Rough",
@@ -7266,7 +7266,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-blonde-454",
   "name": "Blonde",
   "persianName": "Blonde",
@@ -7282,7 +7282,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-anal-455",
   "name": "Anal",
   "persianName": "Anal",
@@ -7298,7 +7298,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-live-cams-456",
   "name": "Live Cams",
   "persianName": "Live Cams",
@@ -7314,7 +7314,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-russian-457",
   "name": "Russian",
   "persianName": "Russian",
@@ -7330,7 +7330,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-threesome-458",
   "name": "Threesome",
   "persianName": "Threesome",
@@ -7346,7 +7346,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-hardcore-459",
   "name": "Hardcore",
   "persianName": "Hardcore",
@@ -7362,7 +7362,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-teen-460",
   "name": "Teen",
   "persianName": "Teen",
@@ -7378,7 +7378,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-blowjob-461",
   "name": "Blowjob",
   "persianName": "Blowjob",
@@ -7394,7 +7394,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-pov-462",
   "name": "POV",
   "persianName": "POV",
@@ -7410,7 +7410,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-latina-463",
   "name": "Latina",
   "persianName": "Latina",
@@ -7426,7 +7426,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-interracial-464",
   "name": "Interracial",
   "persianName": "Interracial",
@@ -7442,7 +7442,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-big-ass-465",
   "name": "Big Ass",
   "persianName": "Big Ass",
@@ -7458,7 +7458,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-fetish-466",
   "name": "Fetish",
   "persianName": "Fetish",
@@ -7474,7 +7474,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-big-tits-467",
   "name": "Big Tits",
   "persianName": "Big Tits",
@@ -7490,7 +7490,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-big-dick-468",
   "name": "Big Dick",
   "persianName": "Big Dick",
@@ -7506,7 +7506,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-milf-469",
   "name": "MILF",
   "persianName": "MILF",
@@ -7522,7 +7522,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-pornstar-470",
   "name": "Pornstar",
   "persianName": "Pornstar",
@@ -7538,7 +7538,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-lesbian-471",
   "name": "Lesbian",
   "persianName": "Lesbian",
@@ -7554,7 +7554,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
+{
   "id": "adu-gay-472",
   "name": "Gay",
   "persianName": "Gay",
@@ -7570,183 +7570,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "بزرگسالان ۱۸+ — با فیلترشکن"
  },
- {
-  "id": "mov-afra-film",
-  "name": "Afra Film",
-  "persianName": "Afra Film",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://cdn.icon-icons.com/icons2/2362/PNG/512/tv_monitor_television_icon_143469.png",
-  "streamUrl": "https://afrafhls.wns.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "mov-cafe-film",
-  "name": "Cafe Film",
-  "persianName": "Cafe Film",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://cdn.icon-icons.com/icons2/2362/PNG/512/tv_monitor_television_icon_143469.png",
-  "streamUrl": "https://cafefhls.wns.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "mov-grand-cinema",
-  "name": "Grand Cinema",
-  "persianName": "Grand Cinema",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://cdn.icon-icons.com/icons2/2362/PNG/512/tv_monitor_television_icon_143469.png",
-  "streamUrl": "https://gcinemahls.wns.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "mov-ifilm-2",
-  "name": "iFilm 2",
-  "persianName": "iFilm 2",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://upload.wikimedia.org/wikipedia/fa/c/ce/Ifilm2logo.png",
-  "streamUrl": "https://live.presstv.ir/hls/ifilm2.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "mov-ifilm-persian",
-  "name": "iFilm Persian",
-  "persianName": "iFilm Persian",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png",
-  "streamUrl": "https://live.presstv.ir/hls/ifilmfa.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "mov-meta-film-tv",
-  "name": "Meta Film TV",
-  "persianName": "Meta Film TV",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://cdn.icon-icons.com/icons2/2362/PNG/512/tv_monitor_television_icon_143469.png",
-  "streamUrl": "https://metafilmhls.wns.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "mov-persiana-cinema",
-  "name": "Persiana Cinema",
-  "persianName": "Persiana Cinema",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://i.imgur.com/hgIro9r.png",
-  "streamUrl": "https://cinehls.persiana.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "mov-namayesh",
-  "name": "Namayesh",
-  "persianName": "نمایش",
-  "category": "movies",
-  "satellite": "دوبله فارسی",
-  "logo": "https://www.aparatchi.com/images/chanells-logo/namayesh.svg",
-  "streamUrl": "https://ncdn.telewebion.ir/namayesh/live/playlist.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "ser-ava-series",
-  "name": "AVA Series",
-  "persianName": "AVA Series",
-  "category": "series",
-  "satellite": "دوبله فارسی",
-  "logo": "https://i.imgur.com/8AfAfZE.png",
-  "streamUrl": "https://avaserieshls.wns.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "ser-persiana-series",
-  "name": "Persiana Series",
-  "persianName": "Persiana Series",
-  "category": "series",
-  "satellite": "دوبله فارسی",
-  "logo": "https://cdn.icon-icons.com/icons2/2362/PNG/512/tv_monitor_television_icon_143469.png",
-  "streamUrl": "https://onehls.persiana.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
- },
- {
-  "id": "ser-classic-tv",
-  "name": "Classic TV",
-  "persianName": "کلاسیک تی‌وی",
-  "category": "series",
-  "satellite": "دوبله فارسی",
-  "logo": "https://cdn.icon-icons.com/icons2/2362/PNG/512/tv_monitor_television_icon_143469.png",
-  "streamUrl": "https://clshls.wns.live/hls/stream.m3u8",
-  "isHd": false,
-  "is18Plus": false,
-  "quality": "720p",
-  "country": "Iran",
-  "language": "Persian",
-  "free": false,
-  "description": "دوبله فارسی — ویژه اشتراک"
- },
- {
+{
   "id": "kid-persiana-junior",
   "name": "Persiana Junior",
   "persianName": "Persiana Junior",
@@ -7762,7 +7586,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم/سریال/کارتون دوبله فارسی — ویژه اشتراک"
  },
- {
+{
   "id": "kid-nasim",
   "name": "Nasim",
   "persianName": "نسیم (کودک)",
@@ -7794,7 +7618,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-action-24-1080p-not-24-7-1",
   "name": "Action 24 (1080p) [Not 24/7]",
   "persianName": "Action 24 (1080p) [Not 24/7]",
@@ -7810,7 +7634,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-action-hollywood-movies-1080p-2",
   "name": "Action Hollywood Movies (1080p)",
   "persianName": "Action Hollywood Movies (1080p)",
@@ -7826,7 +7650,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-action-hollywood-movies-1080p-3",
   "name": "Action Hollywood Movies (1080p)",
   "persianName": "Action Hollywood Movies (1080p)",
@@ -7842,7 +7666,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-afroland-thriller-720p-4",
   "name": "AfroLand Thriller (720p)",
   "persianName": "AfroLand Thriller (720p)",
@@ -7858,7 +7682,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-american-horrors-480p-5",
   "name": "American Horrors (480p)",
   "persianName": "American Horrors (480p)",
@@ -7874,7 +7698,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-best-action-tv-1080p-6",
   "name": "Best Action TV (1080p)",
   "persianName": "Best Action TV (1080p)",
@@ -7890,7 +7714,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-best-thriller-tv-1080p-7",
   "name": "Best Thriller TV (1080p)",
   "persianName": "Best Thriller TV (1080p)",
@@ -7906,7 +7730,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-canal-action-europe-slovakia-7-8",
   "name": "Canal+ Action Europe Slovakia (720p)",
   "persianName": "Canal+ Action Europe Slovakia (720p)",
@@ -7922,7 +7746,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-channel-fight-1080p-9",
   "name": "Channel Fight (1080p)",
   "persianName": "Channel Fight (1080p)",
@@ -7938,7 +7762,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-cin-action-by-pluto-tv-10",
   "name": "Ciné Action by Pluto TV",
   "persianName": "Ciné Action by Pluto TV",
@@ -7954,7 +7778,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-cin-thrillers-by-pluto-tv-11",
   "name": "Ciné Thrillers by Pluto TV",
   "persianName": "Ciné Thrillers by Pluto TV",
@@ -7970,7 +7794,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-cinethriller-720p-12",
   "name": "CineThriller (720p)",
   "persianName": "CineThriller (720p)",
@@ -7986,7 +7810,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-dark-matter-tv-720p-13",
   "name": "Dark Matter TV (720p)",
   "persianName": "Dark Matter TV (720p)",
@@ -8002,7 +7826,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-fight-tv-1080p-14",
   "name": "Fight TV (1080p)",
   "persianName": "Fight TV (1080p)",
@@ -8018,7 +7842,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-fightbox-15",
   "name": "FightBox",
   "persianName": "FightBox",
@@ -8034,7 +7858,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-fightbox-hd-16",
   "name": "FightBox HD",
   "persianName": "FightBox HD",
@@ -8050,7 +7874,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-fluss-monster-1080p-17",
   "name": "Fluss Monster (1080p)",
   "persianName": "Fluss Monster (1080p)",
@@ -8066,7 +7890,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-fluss-monster-18",
   "name": "Fluss-Monster",
   "persianName": "Fluss-Monster",
@@ -8082,7 +7906,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-hard-knocks-fighting-champions-19",
   "name": "Hard Knocks Fighting Championship",
   "persianName": "Hard Knocks Fighting Championship",
@@ -8098,7 +7922,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-horror-by-alter-1080p-20",
   "name": "Horror by ALTER (1080p)",
   "persianName": "Horror by ALTER (1080p)",
@@ -8114,7 +7938,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-horror-by-alter-1080p-21",
   "name": "Horror by ALTER (1080p)",
   "persianName": "Horror by ALTER (1080p)",
@@ -8130,7 +7954,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-horror-club-22",
   "name": "Horror Club",
   "persianName": "Horror Club",
@@ -8146,7 +7970,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-horror-tv-1080p-23",
   "name": "Horror TV (1080p)",
   "persianName": "Horror TV (1080p)",
@@ -8162,7 +7986,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-hot-wheels-action-1080p-24",
   "name": "Hot Wheels Action (1080p)",
   "persianName": "Hot Wheels Action (1080p)",
@@ -8178,7 +8002,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-kung-fu-1080p-25",
   "name": "Kung Fu+ (1080p)",
   "persianName": "Kung Fu+ (1080p)",
@@ -8194,7 +8018,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-monster-high-26",
   "name": "Monster High",
   "persianName": "Monster High",
@@ -8210,7 +8034,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-monster-jam-720p-27",
   "name": "Monster Jam (720p)",
   "persianName": "Monster Jam (720p)",
@@ -8226,7 +8050,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-movies-action-1080p-28",
   "name": "Movies Action (1080p)",
   "persianName": "Movies Action (1080p)",
@@ -8242,7 +8066,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-movies-thriller-1080p-29",
   "name": "Movies Thriller (1080p)",
   "persianName": "Movies Thriller (1080p)",
@@ -8258,7 +8082,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-mr-bean-live-action-1080p-30",
   "name": "Mr Bean Live Action (1080p)",
   "persianName": "Mr Bean Live Action (1080p)",
@@ -8274,7 +8098,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-mr-bean-live-action-1080p-31",
   "name": "Mr Bean Live Action (1080p)",
   "persianName": "Mr Bean Live Action (1080p)",
@@ -8290,7 +8114,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-nonstop-kung-fu-32",
   "name": "NonStop Kung Fu",
   "persianName": "NonStop Kung Fu",
@@ -8306,7 +8130,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-nonstop-kung-fu-33",
   "name": "NonStop Kung Fu",
   "persianName": "NonStop Kung Fu",
@@ -8322,7 +8146,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-nonstop-kung-fu-34",
   "name": "NonStop Kung Fu",
   "persianName": "NonStop Kung Fu",
@@ -8338,7 +8162,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-persiana-fight-35",
   "name": "Persiana Fight",
   "persianName": "Persiana Fight",
@@ -8354,7 +8178,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-80-s-action-36",
   "name": "Pluto TV 80's Action",
   "persianName": "Pluto TV 80's Action",
@@ -8370,7 +8194,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-action-37",
   "name": "Pluto TV Action",
   "persianName": "Pluto TV Action",
@@ -8386,7 +8210,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-action-38",
   "name": "Pluto TV Action",
   "persianName": "Pluto TV Action",
@@ -8402,7 +8226,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-action-39",
   "name": "Pluto TV Action",
   "persianName": "Pluto TV Action",
@@ -8418,7 +8242,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-action-40",
   "name": "Pluto TV Action",
   "persianName": "Pluto TV Action",
@@ -8434,7 +8258,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-action-41",
   "name": "Pluto TV Action",
   "persianName": "Pluto TV Action",
@@ -8450,7 +8274,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-action-42",
   "name": "Pluto TV Action",
   "persianName": "Pluto TV Action",
@@ -8466,7 +8290,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-action-movies-43",
   "name": "Pluto TV Action Movies",
   "persianName": "Pluto TV Action Movies",
@@ -8482,7 +8306,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-fantasy-horror-44",
   "name": "Pluto TV Fantasy & Horror",
   "persianName": "Pluto TV Fantasy & Horror",
@@ -8498,7 +8322,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-film-thriller-45",
   "name": "Pluto TV Film Thriller",
   "persianName": "Pluto TV Film Thriller",
@@ -8514,7 +8338,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-46",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8530,7 +8354,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-47",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8546,7 +8370,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-48",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8562,7 +8386,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-49",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8578,7 +8402,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-50",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8594,7 +8418,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-51",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8610,7 +8434,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-52",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8626,7 +8450,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-53",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8642,7 +8466,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-54",
   "name": "Pluto TV Horror",
   "persianName": "Pluto TV Horror",
@@ -8658,7 +8482,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-horror-serien-55",
   "name": "Pluto TV Horror-Serien",
   "persianName": "Pluto TV Horror-Serien",
@@ -8674,7 +8498,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-reaction-56",
   "name": "Pluto TV Reaction",
   "persianName": "Pluto TV Reaction",
@@ -8690,7 +8514,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-retro-action-movies-57",
   "name": "Pluto TV Retro Action Movies",
   "persianName": "Pluto TV Retro Action Movies",
@@ -8706,7 +8530,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-retro-crime-action-58",
   "name": "Pluto TV Retro Crime Action",
   "persianName": "Pluto TV Retro Crime Action",
@@ -8722,7 +8546,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-thrillers-59",
   "name": "Pluto TV Thrillers",
   "persianName": "Pluto TV Thrillers",
@@ -8738,7 +8562,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-thrillers-60",
   "name": "Pluto TV Thrillers",
   "persianName": "Pluto TV Thrillers",
@@ -8754,7 +8578,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-thrillers-61",
   "name": "Pluto TV Thrillers",
   "persianName": "Pluto TV Thrillers",
@@ -8770,7 +8594,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-pluto-tv-zombies-62",
   "name": "Pluto TV Zombies",
   "persianName": "Pluto TV Zombies",
@@ -8786,7 +8610,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-action-movies-finla-63",
   "name": "Rakuten TV Action Movies Finland (1080p)",
   "persianName": "Rakuten TV Action Movies Finland (1080p)",
@@ -8802,7 +8626,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-action-movies-germa-64",
   "name": "Rakuten TV Action Movies Germany (1080p)",
   "persianName": "Rakuten TV Action Movies Germany (1080p)",
@@ -8818,7 +8642,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-action-movies-italy-65",
   "name": "Rakuten TV Action Movies Italy (1080p)",
   "persianName": "Rakuten TV Action Movies Italy (1080p)",
@@ -8834,7 +8658,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-action-movies-spain-66",
   "name": "Rakuten TV Action Movies Spain (1080p)",
   "persianName": "Rakuten TV Action Movies Spain (1080p)",
@@ -8850,7 +8674,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-action-movies-uk-10-67",
   "name": "Rakuten TV Action Movies UK (1080p)",
   "persianName": "Rakuten TV Action Movies UK (1080p)",
@@ -8866,7 +8690,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-films-action-720p-68",
   "name": "Rakuten TV Films Action (720p)",
   "persianName": "Rakuten TV Films Action (720p)",
@@ -8882,7 +8706,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-films-thriller-720p-69",
   "name": "Rakuten TV Films Thriller (720p)",
   "persianName": "Rakuten TV Films Thriller (720p)",
@@ -8898,7 +8722,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-thrillers-germany-1-70",
   "name": "Rakuten TV Thrillers Germany (1080p)",
   "persianName": "Rakuten TV Thrillers Germany (1080p)",
@@ -8914,7 +8738,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-thrillers-spain-108-71",
   "name": "Rakuten TV Thrillers Spain (1080p)",
   "persianName": "Rakuten TV Thrillers Spain (1080p)",
@@ -8930,7 +8754,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rakuten-tv-thrillers-uk-1080p-72",
   "name": "Rakuten TV Thrillers UK (1080p)",
   "persianName": "Rakuten TV Thrillers UK (1080p)",
@@ -8946,7 +8770,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-rev-n-action-720p-73",
   "name": "Rev'n Action (720p)",
   "persianName": "Rev'n Action (720p)",
@@ -8962,7 +8786,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-river-monsters-1080p-74",
   "name": "River Monsters (1080p)",
   "persianName": "River Monsters (1080p)",
@@ -8978,7 +8802,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-river-monsters-720p-75",
   "name": "River Monsters (720p)",
   "persianName": "River Monsters (720p)",
@@ -8994,7 +8818,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-river-monsters-720p-76",
   "name": "River Monsters (720p)",
   "persianName": "River Monsters (720p)",
@@ -9010,7 +8834,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-river-monsters-720p-77",
   "name": "River Monsters (720p)",
   "persianName": "River Monsters (720p)",
@@ -9026,7 +8850,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-river-monsters-720p-78",
   "name": "River Monsters (720p)",
   "persianName": "River Monsters (720p)",
@@ -9042,7 +8866,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-river-monsters-720p-79",
   "name": "River Monsters (720p)",
   "persianName": "River Monsters (720p)",
@@ -9058,7 +8882,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-sony-one-hits-action-1080p-80",
   "name": "Sony One Hits Action (1080p)",
   "persianName": "Sony One Hits Action (1080p)",
@@ -9074,7 +8898,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-thrillers-365-81",
   "name": "Thrillers 365",
   "persianName": "Thrillers 365",
@@ -9090,7 +8914,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-universal-action-1080p-82",
   "name": "Universal Action (1080p)",
   "persianName": "Universal Action (1080p)",
@@ -9106,7 +8930,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-universal-action-720p-83",
   "name": "Universal Action (720p)",
   "persianName": "Universal Action (720p)",
@@ -9122,7 +8946,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-universal-monsters-1080p-84",
   "name": "Universal Monsters (1080p)",
   "persianName": "Universal Monsters (1080p)",
@@ -9138,7 +8962,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-universal-monsters-720p-85",
   "name": "Universal Monsters (720p)",
   "persianName": "Universal Monsters (720p)",
@@ -9154,7 +8978,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-urban-action-tv-1080p-86",
   "name": "Urban Action TV (1080p)",
   "persianName": "Urban Action TV (1080p)",
@@ -9170,7 +8994,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-viasat-kino-action-87",
   "name": "Viasat Kino Action",
   "persianName": "Viasat Kino Action",
@@ -9186,7 +9010,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-watch-it-scream-720p-88",
   "name": "Watch it Scream! (720p)",
   "persianName": "Watch it Scream! (720p)",
@@ -9202,7 +9026,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-yes-movies-action-1080p-89",
   "name": "Yes Movies Action (1080p)",
   "persianName": "Yes Movies Action (1080p)",
@@ -9218,7 +9042,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   "free": false,
   "description": "فیلم اکشن/رزمی — زیرنویس، ویژه اشتراک"
  },
- {
+{
   "id": "mov-zylo-screamin-1080p-90",
   "name": "Zylo ScreamIN (1080p)",
   "persianName": "Zylo ScreamIN (1080p)",
@@ -9233,5 +9057,5 @@ export const INITIAL_CHANNELS: Channel[] = [
   "language": "English",
   "free": false,
   "description": "فیلم ترسناک — زیرنویس، ویژه اشتراک"
- },
+ }
 ];

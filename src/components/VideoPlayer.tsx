@@ -79,6 +79,9 @@ export const VideoPlayer: React.FC<Props> = ({
   const [sleepTimerMinutes, setSleepTimerMinutes] = useState<number | null>(null);
   const [sleepRemainingSeconds, setSleepRemainingSeconds] = useState<number | null>(null);
   const [showSettingsMenu, setShowSettingsMenu] = useState<boolean>(false);
+  const [subTracks, setSubTracks] = useState<{ id: number; name: string }[]>([]);
+  const [subOn, setSubOn] = useState<boolean>(false);
+  const [showSubMenu, setShowSubMenu] = useState<boolean>(false);
 
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -158,9 +161,18 @@ export const VideoPlayer: React.FC<Props> = ({
           hlsRef.current = hls;
           hls.loadSource(resolvedUrl);
           hls.attachMedia(video);
+          setSubTracks([]);
+          setSubOn(false);
           hls.on(Hls.Events.MANIFEST_PARSED, () => {
             setIsLoading(false);
             video.play().catch(() => setIsPlaying(false));
+          });
+          hls.on(Hls.Events.SUBTITLE_TRACKS_UPDATED, (_e: any, d: any) => {
+            const list = (d.subtitleTracks || []).map((t: any, i: number) => ({
+              id: i,
+              name: t.name || t.lang || ('زیرنویس ' + (i + 1)),
+            }));
+            setSubTracks(list);
           });
           hls.on(Hls.Events.ERROR, (_evt, data) => {
             if (!data.fatal) return;
@@ -250,6 +262,23 @@ export const VideoPlayer: React.FC<Props> = ({
       videoRef.current.muted = val === 0;
       setIsMuted(val === 0);
     }
+  };
+
+  const toggleSubtitles = (trackId?: number) => {
+    const hls = hlsRef.current;
+    if (!hls) return;
+    if (subTracks.length === 0) return;
+    const idx = trackId !== undefined ? trackId : subTracks[0].id;
+    if (subOn && trackId === undefined) {
+      hls.subtitleDisplay = false;
+      hls.subtitleTrack = -1;
+      setSubOn(false);
+    } else {
+      hls.subtitleTrack = idx;
+      hls.subtitleDisplay = true;
+      setSubOn(true);
+    }
+    setShowSubMenu(false);
   };
 
   const toggleFullscreen = () => {
@@ -514,6 +543,42 @@ export const VideoPlayer: React.FC<Props> = ({
                 </div>
               )}
             </div>
+
+            {/* Subtitles (CC) */}
+            {subTracks.length > 0 && (
+              <div className="relative">
+                <button
+                  onClick={() => (subTracks.length > 1 ? setShowSubMenu((v) => !v) : toggleSubtitles())}
+                  className={`px-2.5 py-2 rounded-xl text-[11px] font-bold transition ${
+                    subOn ? 'bg-emerald-600 text-white' : 'bg-white/10 hover:bg-white/20 text-white'
+                  }`}
+                  title="زیرنویس"
+                >
+                  CC
+                </button>
+                {showSubMenu && (
+                  <div className={`absolute bottom-12 left-0 w-44 rounded-2xl p-2 shadow-2xl border ${theme.cardBg} ${theme.cardBorder} z-50 text-right`}>
+                    {subTracks.map((t) => (
+                      <button
+                        key={t.id}
+                        onClick={() => toggleSubtitles(t.id)}
+                        className={`w-full text-right px-2 py-1.5 rounded-lg text-xs transition ${
+                          subOn ? theme.badgeBg : 'hover:bg-white/10 text-white/85'
+                        }`}
+                      >
+                        {t.name}
+                      </button>
+                    ))}
+                    <button
+                      onClick={() => { if (hlsRef.current) { hlsRef.current.subtitleDisplay = false; hlsRef.current.subtitleTrack = -1; } setSubOn(false); setShowSubMenu(false); }}
+                      className="w-full text-right px-2 py-1.5 rounded-lg text-xs text-rose-300 hover:bg-white/10"
+                    >
+                      خاموش
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Download Button */}
             <button
