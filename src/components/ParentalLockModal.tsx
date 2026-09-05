@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Lock, Unlock, KeyRound, X, AlertTriangle, ShieldCheck } from 'lucide-react';
+import { Lock, X, AlertTriangle, ShieldCheck } from 'lucide-react';
 import { ThemeConfig } from '../theme';
+import { verifyAdultPin } from '../config/adultPin';
 
 interface Props {
   isOpen: boolean;
@@ -17,24 +18,28 @@ export const ParentalLockModal: React.FC<Props> = ({
 }) => {
   const [pin, setPin] = useState<string>('');
   const [error, setError] = useState<string>('');
-  const defaultPin = '1234';
+  const [checking, setChecking] = useState<boolean>(false);
 
   if (!isOpen) return null;
 
   const handleKeyPress = (num: string) => {
-    if (pin.length < 4) {
-      const newPin = pin + num;
-      setPin(newPin);
-      setError('');
-      if (newPin.length === 4) {
-        if (newPin === defaultPin || newPin === '0000') {
-          onUnlockSuccess();
-          setPin('');
-        } else {
-          setError('رمز اشتباه است! رمز پیش‌فرض ۱۲۳۴ است.');
-          setPin('');
-        }
-      }
+    if (pin.length >= 4 || checking) return;
+    const newPin = pin + num;
+    setPin(newPin);
+    setError('');
+    if (newPin.length === 4) {
+      setChecking(true);
+      verifyAdultPin(newPin)
+        .then((ok) => {
+          if (ok) {
+            onUnlockSuccess();
+            setPin('');
+          } else {
+            setError('رمز اشتباه است.');
+            setPin('');
+          }
+        })
+        .finally(() => setChecking(false));
     }
   };
 
@@ -64,7 +69,7 @@ export const ParentalLockModal: React.FC<Props> = ({
         <p className="text-xs text-white/70 mb-4 leading-relaxed">
           برای دسترسی به شبکه‌های شبانه و استایل ۱۸+، پین‌کد ۴ رقمی را وارد کنید.
           <br />
-          <span className="text-amber-400 font-bold mt-1 inline-block">رمز عبور پیش‌فرض: ۱۲۳۴</span>
+          <span className="text-amber-400 font-bold mt-1 inline-block">رمز را از پشتیبانی بگیرید</span>
         </p>
 
         {/* PIN Dots */}

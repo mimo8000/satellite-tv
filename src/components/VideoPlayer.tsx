@@ -20,6 +20,7 @@ import { Channel } from '../types';
 import { ThemeConfig } from '../theme';
 import { Download, Lock } from 'lucide-react';
 import NiniDownload from '../plugins/nini-download';
+import { proxied } from '../plugins/nini-stream-proxy';
 
 interface Props {
   channel: Channel;
@@ -103,84 +104,72 @@ export const VideoPlayer: React.FC<Props> = ({
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+    let cancelled = false;
 
     setIsLoading(true);
     setStreamError(false);
 
-    const activeUrl = usingBackup && channel.backupStreamUrl ? channel.backupStreamUrl : channel.streamUrl;
+    const activeUrl = (usingBackup && channel.backupStreamUrl ? channel.backupStreamUrl : channel.streamUrl);
 
-    // Destroy existing HLS instance
-    if (hlsRef.current) {
-      hlsRef.current.destroy();
-      hlsRef.current = null;
-    }
+    // Proxy the stream through the native server first (handles CORS + headers).
+    (async () => {
+      let resolvedUrl = activeUrl;
+      try { resolvedUrl = await proxied(activeUrl); } catch { /* fall back to direct */ }
+      if (cancelled) return;
 
-    // Check if browser natively supports HLS (Safari / iOS)
-    if (video.canPlayType('application/vnd.apple.mpegurl') && activeUrl.endsWith('.m3u8')) {
-      video.src = activeUrl;
-      video.load();
-      video.play().catch(() => setIsPlaying(false));
-    } else if (Hls.isSupported() && (activeUrl.includes('.m3u8') || !activeUrl.endsWith('.mp4'))) {
-      const hls = new Hls({
-        enableWorker: true,
-        lowLatencyMode: true,
-        backBufferLength: 90,
-      });
-      hlsRef.current = hls;
-      hls.loadSource(activeUrl);
-      hls.attachMedia(video);
+      // Destroy existing HLS instance
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
 
-      hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        setIsLoading(false);
-        video.play().catch(() => setIsPlaying(false));
-      });
-
-      hls.on(Hls.Events.ERROR, (_, data) => {
-        if (data.fatal) {
-          console.warn('HLS stream error:', data);
-          if (channel.backupStreamUrl && !usingBackup) {
-            setUsingBackup(true);
-          } else {
-            setStreamError(true);
+      const startPlayback = () => {
+        if (video.canPlayType('application/vnd.apple.mpegurl') && resolvedUrl.endsWith('.m3u8')) {
+          video.src = resolvedUrl;
+          video.load();
+          video.play().catch(() => setIsPlaying(false));
+        } else if (Hls.isSupported() && (resolvedUrl.includes('.m3u8') || !resolvedUrl.endsWith('.mp4'))) {
+          const hls = new Hls({ enableWorker: true, lowLatencyMode: true, backBufferLength: 90 });
+          hlsRef.current = hls;
+          hls.loadSource(resolvedUrl);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, () => {
             setIsLoading(false);
-          }
+            video.play().catch(() => setIsPlaying(false));
+          });
+          hls.on(Hls.Events.ERROR, (_, data) => {
+            if (data.fatal) {
+              console.warn('HLS stream error:', data);
+              if (channel.backupStreamUrl && !usingBackup) setUsingBackup(true);
+              else { setStreamError(true); setIsLoading(false); }
+            }
+          });
+        } else {
+          video.src = resolvedUrl;
+          video.load();
+          video.play().catch(() => setIsPlaying(false));
         }
-      });
-    } else {
-      // Direct MP4 or supported stream
-      video.src = activeUrl;
-      video.load();
-      video.play().catch(() => setIsPlaying(false));
-    }
+      };
 
-    const handlePlaying = () => {
-      setIsLoading(false);
-      setIsPlaying(true);
-      setStreamError(false);
-    };
+      startPlayback();
+    })();
 
+    const handlePlaying = () => { setIsLoading(false); setIsPlaying(true); setStreamError(false); };
     const handleWaiting = () => setIsLoading(true);
     const handleError = () => {
-      if (channel.backupStreamUrl && !usingBackup) {
-        setUsingBackup(true);
-      } else {
-        setStreamError(true);
-        setIsLoading(false);
-      }
+      if (channel.backupStreamUrl && !usingBackup) setUsingBackup(true);
+      else { setStreamError(true); setIsLoading(false); }
     };
-
     video.addEventListener('playing', handlePlaying);
     video.addEventListener('waiting', handleWaiting);
     video.addEventListener('error', handleError);
 
     return () => {
+      cancelled = true;
       video.removeEventListener('playing', handlePlaying);
       video.removeEventListener('waiting', handleWaiting);
       video.removeEventListener('error', handleError);
-      if (hlsRef.current) {
-        hlsRef.current.destroy();
-        hlsRef.current = null;
-      }
+      if (hlsRef.current) { hlsRef.current.destroy(); hlsRef.current = null; }
     };
   }, [channel.id, usingBackup]);
 

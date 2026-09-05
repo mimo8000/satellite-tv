@@ -239,6 +239,11 @@ export const ChannelList: React.FC<Props> = ({
                           ۱۸+
                         </span>
                       )}
+                      {channel.free === false && (
+                        <span className="text-[9px] px-1 py-0.2 rounded font-bold bg-amber-500/90 text-black shrink-0 flex items-center gap-0.5">
+                          👑 PRO
+                        </span>
+                      )}
                     </div>
                     <p className="text-[11px] opacity-75 truncate">{channel.name}</p>
                     <div className="flex items-center gap-2 text-[10px] opacity-65 font-mono mt-0.5">
