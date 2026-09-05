@@ -141,7 +141,20 @@ export const VideoPlayer: React.FC<Props> = ({
           video.load();
           video.play().catch(() => setIsPlaying(false));
         } else if (Hls.isSupported() && (resolvedUrl.includes('.m3u8') || !resolvedUrl.endsWith('.mp4'))) {
-          const hls = new Hls({ enableWorker: true, lowLatencyMode: true, backBufferLength: 90 });
+          const hls = new Hls({
+            enableWorker: true,
+            lowLatencyMode: false,
+            backBufferLength: 90,
+            // survive transient network hiccups instead of showing the spinner
+            manifestLoadingMaxRetry: 10,
+            manifestLoadingRetryDelay: 500,
+            manifestLoadingTimeOut: 15000,
+            levelLoadingMaxRetry: 10,
+            levelLoadingRetryDelay: 500,
+            fragLoadingMaxRetry: 12,
+            fragLoadingRetryDelay: 500,
+            fragLoadingTimeOut: 20000,
+          });
           hlsRef.current = hls;
           hls.loadSource(resolvedUrl);
           hls.attachMedia(video);
@@ -149,13 +162,18 @@ export const VideoPlayer: React.FC<Props> = ({
             setIsLoading(false);
             video.play().catch(() => setIsPlaying(false));
           });
-          hls.on(Hls.Events.ERROR, (_, data) => {
-            if (data.fatal) {
-              console.warn('HLS stream error:', data);
-              if (fallbackToDirect()) return;
-              if (channel.backupStreamUrl && !usingBackup) setUsingBackup(true);
-              else { setStreamError(true); setIsLoading(false); }
+          hls.on(Hls.Events.ERROR, (_evt, data) => {
+            if (!data.fatal) return;
+            console.warn('HLS stream error:', data);
+            // network/media glitches: restart loading instead of killing playback
+            if (data.type === Hls.ErrorTypes.NETWORK_ERROR || data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+              if (data.type === Hls.ErrorTypes.MEDIA_ERROR) hls.recoverMediaError();
+              else hls.startLoad();
+              return;
             }
+            if (fallbackToDirect()) return;
+            if (channel.backupStreamUrl && !usingBackup) setUsingBackup(true);
+            else { setStreamError(true); setIsLoading(false); }
           });
         } else {
           video.src = resolvedUrl;
@@ -165,6 +183,18 @@ export const VideoPlayer: React.FC<Props> = ({
       };
 
       startPlayback();
+
+      // Stall watchdog: if the proxied stream hasn't started playing within 8s,
+      // switch to the direct URL (hosts like adultiptv send CORS:* so it works).
+      const stallTimer = setTimeout(() => {
+        if (cancelled) return;
+        if (video.readyState < 2 && resolvedUrl.indexOf('127.0.0.1') !== -1) {
+          console.warn('proxy stall — switching to direct URL');
+          fallbackToDirect();
+        }
+      }, 8000);
+      const clearStall = () => clearTimeout(stallTimer);
+      video.addEventListener('playing', clearStall, { once: true });
     })();
 
     const handlePlaying = () => { setIsLoading(false); setIsPlaying(true); setStreamError(false); };
