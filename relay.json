@@ -1,1 +1,4 @@
-{"baseUrl": "https://gaming-hormone-woods-studies.trycloudflare.com", "note": "US relay for 18+ streams; updated automatically"}
+{
+  "baseUrl": "https://gaming-hormone-woods-studies.trycloudflare.com",
+  "note": "US relay (Railway US box via Cloudflare tunnel). Adult streams proxy through here so they play WITHOUT a VPN. Base URL auto-updates on server restart via relay.sh; this file is the public fallback."
+}

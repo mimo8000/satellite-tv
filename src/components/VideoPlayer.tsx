@@ -21,6 +21,7 @@ import { ThemeConfig } from '../theme';
 import { Download, Lock } from 'lucide-react';
 import NiniDownload from '../plugins/nini-download';
 import { proxied } from '../plugins/nini-stream-proxy';
+import { relayProxied } from '../utils/relay';
 
 interface Props {
   channel: Channel;
@@ -51,7 +52,12 @@ export const VideoPlayer: React.FC<Props> = ({
     setDownloading(true);
     setDownloadMsg('در حال دانلود… فایل در پوشه Downloads ذخیره می‌شود');
     try {
-      const res = await NiniDownload.download({ url: channel.streamUrl, title: channel.name });
+      let dlUrl = channel.streamUrl;
+      if (channel.is18Plus) {
+        const rp = await relayProxied(channel.streamUrl);
+        if (rp) dlUrl = rp;
+      }
+      const res = await NiniDownload.download({ url: dlUrl, title: channel.name });
       if (res.ok) setDownloadMsg('✅ دانلود تمام شد → ' + (res.path || 'پوشه Downloads'));
       else setDownloadMsg('❌ خطا: ' + (res.error || 'ناموفق'));
     } catch (e: any) {
@@ -114,11 +120,19 @@ export const VideoPlayer: React.FC<Props> = ({
 
     const activeUrl = (usingBackup && channel.backupStreamUrl ? channel.backupStreamUrl : channel.streamUrl);
 
-    // Proxy the stream through the native server first (handles CORS + headers).
+    // Playback candidate chain:
+    //  • 18+ channels: US relay first (plays WITHOUT a VPN), then local proxy, then direct.
+    //  • others: local proxy (CORS/headers), then direct.
     (async () => {
-      let resolvedUrl = activeUrl;
-      let triedDirect = false;
-      try { resolvedUrl = await proxied(activeUrl); } catch { /* fall back to direct */ }
+      const candidates: string[] = [];
+      if (channel.is18Plus) {
+        try { const rp = await relayProxied(activeUrl); if (rp) candidates.push(rp); } catch { /* relay offline */ }
+      }
+      let localProxyUrl: string | null = null;
+      try { localProxyUrl = await proxied(activeUrl); } catch { /* no native proxy */ }
+      if (localProxyUrl && localProxyUrl !== activeUrl) candidates.push(localProxyUrl);
+      candidates.push(activeUrl);
+
       if (cancelled) return;
 
       // Destroy existing HLS instance
@@ -127,11 +141,15 @@ export const VideoPlayer: React.FC<Props> = ({
         hlsRef.current = null;
       }
 
-      // If the native proxy URL itself fails, retry ONCE with the direct URL.
-      const fallbackToDirect = (): boolean => {
-        if (!triedDirect && resolvedUrl.indexOf('127.0.0.1') !== -1) {
-          triedDirect = true;
-          resolvedUrl = activeUrl;
+      let candidateIdx = 0;
+      let resolvedUrl = candidates[0];
+
+      // Advance to the next candidate (relay → proxy → direct) on fatal error/stall.
+      const fallbackNext = (): boolean => {
+        if (candidateIdx + 1 < candidates.length) {
+          candidateIdx += 1;
+          resolvedUrl = candidates[candidateIdx];
+          console.warn('stream fallback → candidate', candidateIdx);
           startPlayback();
           return true;
         }
@@ -183,7 +201,7 @@ export const VideoPlayer: React.FC<Props> = ({
               else hls.startLoad();
               return;
             }
-            if (fallbackToDirect()) return;
+            if (fallbackNext()) return;
             if (channel.backupStreamUrl && !usingBackup) setUsingBackup(true);
             else { setStreamError(true); setIsLoading(false); }
           });
@@ -196,13 +214,12 @@ export const VideoPlayer: React.FC<Props> = ({
 
       startPlayback();
 
-      // Stall watchdog: if the proxied stream hasn't started playing within 8s,
-      // switch to the direct URL (hosts like adultiptv send CORS:* so it works).
+      // Stall watchdog: if no playback after 8s, advance to the next candidate.
       const stallTimer = setTimeout(() => {
         if (cancelled) return;
-        if (video.readyState < 2 && resolvedUrl.indexOf('127.0.0.1') !== -1) {
-          console.warn('proxy stall — switching to direct URL');
-          fallbackToDirect();
+        if (video.readyState < 2) {
+          console.warn('stream stall — trying next candidate');
+          fallbackNext();
         }
       }, 8000);
       const clearStall = () => clearTimeout(stallTimer);
